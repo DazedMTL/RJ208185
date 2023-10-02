@@ -1,0 +1,211 @@
+---
+- 
+- !ruby/object:RPG::Actor
+  name: ゆう
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: 主人公その他
+  id: 1
+  features: []
+  note: ''
+  equips:
+  - 1
+  - 46
+  - 0
+  - 1
+  - 0
+  nickname: 銀の死神
+  description: "数々の戦場を渡り歩き、生き延びてきた歴戦の傭兵。普段は\r\n温厚だが、ひとたび戦いが始まれば狂戦士と化す。"
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: ライル
+  face_index: 0
+  character_index: 5
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: 主人公その他
+  id: 2
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: エミル
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: $おっとり姉
+  id: 3
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: リサ
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: $勝ち気
+  id: 4
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: マリア
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: $母
+  id: 5
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: ハルカ
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: $教師普段着
+  id: 6
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: レット
+  face_index: 0
+  character_index: 4
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: 主人公その他
+  id: 7
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: ごんぞう
+  face_index: 0
+  character_index: 1
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: 主人公その他
+  id: 8
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: ''
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: ''
+  id: 9
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: ''
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: ''
+  class_id: 1
+  character_name: ''
+  id: 10
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  nickname: ''
+  description: ''
+  max_level: 99
+  icon_index: 0

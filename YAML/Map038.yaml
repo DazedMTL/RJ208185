@@ -1,0 +1,2218 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 15
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: 146ナギサ
+    x: 7
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $雑貨屋
+        character_index: 0
+        direction: 4
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 509
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: 進行イベント
+    x: 0
+    y: 0
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 146
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 花火連発, volume: 40, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 203, p: [1, 0, 6, 7, 4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 35, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「よーしよし・・・こわくないこわくない」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「平気そう？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [3, 10, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ん、ママがいなくて不安だっただけみたいだな～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [1, 3, false]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &2 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &3 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うわすごいよほら」']}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &5 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &6 !ruby/object:RPG::MoveCommand {code: 8, parameters: []}
+          - &7 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-1, 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [10, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [157, 157, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「おー見える見える！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「おー、近いね！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「涼しいしな！こりゃ中で見て正解ですなぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「おっほぉでかいなぁ！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うわすごい」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「思ったより本格的だなぁ～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うっはー振動が！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「すげぇなぁ～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「\.・\.・\.・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「どうだゆう？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・あっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「えっなに？ごめん」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「初めてなんだろ～？見ておかないともったいないって」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ、うんそうだね。見ないと」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　・　・　・]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「それとも」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: 鼓動1, volume: 70, pitch: 110}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「花火より何か気になるのかな～・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: 鼓動1, volume: 85, pitch: 110}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「婆ちゃんは外で、旦那は花火の音が止むまで帰ってこない」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「そんな人妻の家に上がり込んで、']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　　　　　　　　　　　　　　　　なぁにするつもりかな～・・・」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・\.\.」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: 鼓動1, volume: 100, pitch: 110}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [79]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-4, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「する？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うん・・・っ！うん！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 246, p: [3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「わかりやすいやっちゃな～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「じゃ手で\.\^」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あの、お尻見たい・・・ナギサさんのお尻」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「お尻ぃ？こんなおば、・・・']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　　ちょっと年上の女性のなんて見たいかぁ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「見たい！ジーパンがパツパツになってるお尻見たい！']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　　ずっと思ってた！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「わ、わーかったちょっと静かにな？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「お尻なんてさぁ・・・下着だって地味だし」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「関係ないよ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ふむ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-4, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「しょうがないなぁ・・・ほら」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-5, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「お尻ってこのままでもいいの？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「えっあっさっき下着がどうこうって」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「耳ざといなぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「じゃ脱ぐぞ～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-6, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ほら」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「おぉ・・・大きい・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「大きさは別に脱いでもかわらんだろ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「なんかナギサさんの匂いがする」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ええ？なんだそれ蒸れてるからか？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ねぇこれも脱がしていい？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ～」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「どうしよっかな・・・いや意地悪じゃなくてさ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]（”そこ”はマズイよなぁ・・・今更か？）']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「脱がしちゃうね」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-7, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-8, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-9, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [12, HN4-f, 0, 0, 0, 0, 100, 100, 50, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　にちゅっ・・・]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-10, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]（っ！濡れてる？）']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ・・・すごっ・・・あぁっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あーもう勝手に脱がすなー」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]（止めるきっかけなくしちゃったなぁ・・・\.\.\I[122]）']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「濡れてる・・・？これ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-12, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっはぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-11, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ちょあー開くなってぇ\I[528]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-12, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-11, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「指入れてみていい？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「えぇ？\I[122]これ以上はマズいんじゃないかぁ？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「だめ？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「いやぁでもなぁ・・・\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「でも濡れてるよ、これってエッチな気分のときにでるんだよね？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あー・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・指だけだぞ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [11, HN4-a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ふっあっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うわすご・・・中熱くて、ぐちょぐちょだ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: 手コキ（低速）, volume: 70, pitch: 85}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN4-g, 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「んうぅ～～～～っ\I[122]\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「きもちいい？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ・・・はぁっ・・・\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ひさしぶりだから・・・やっばい・・・\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: 手コキ（低速）, volume: 70, pitch: 85}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うぁあっあっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [11, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あっくうぅう\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ・・・・ふぅ・・・\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・\|ね、ゆうのもうおっきくなってる？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「う、うん」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「\.・\.・\.・\.じゃあこの中・・・入れてみる？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「っ！いいの！？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ダメかもね、でも今更じゃない？']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　　　　　　　　　　　　・・・ゆうはしたくない？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「したい！いれたい！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ、でもつけるやつ、コンドームないや」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]（ゴムか・・・確かあったっけ）']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「し、下で買ってくる！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「な～そんなことしてたら冷めちゃうって\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「えっえっ？でも・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「今日は大丈夫だと思うからさ、早くいれちゃいなって\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [11, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 1, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ゆうだって早くいれ\.\^」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [11, 描き文字「にゅぷっ」, 0, 0, -50, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN4-18, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁあ～～すごいこれ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「～～～っ\I[122]ナマのおちんぽ入っちゃってる\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁ・・・\I[122]ほらおちんぽ中でしごいてみな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [156, 156, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（低速）１２回, volume: 55, pitch: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はっあっんっ\I[122]そのちょうしっ\I[122]んっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「やばいこれやばい・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [320]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [156, 156, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うぁっ！！\.\^」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN4-b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 100, volume: 75}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 100, volume: 75}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 120, volume: 65}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ！はぁっ・・・あぁっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [12, HN4-18-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「すーごい勢い\I[122]射精ちゃったな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ご、ごめんなさい」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「いーんだよ、初めてチンポにいきなりナマはキツかったな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「う、うん・・・ねぇ中射精しちゃって大丈夫？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あぁ平気平気\I[122]気にすんなって」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [156, 156, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（低速）１２回, volume: 55, pitch: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「んっ\I[122]どした？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「もっとしたい・・・いい？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「出し入れしながら聞くなよ\I[122]いいよ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [250]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はっん\I[122]硬いまんまなんだな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっはぁっナギサさんもきもちいい？」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「んっ\I[122]気持ちいいよ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　　　　　　　　気にかけてくれて偉いな～ゆう\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（中速）１９回, volume: 55, pitch: 95}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あぁっちんちんしびれてきたっ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]３']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [300]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「またイッちゃいそう！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]２']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「イキそう？いいよ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['     一番奥まで押し込んでびゅっびゅってするんだぞ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]１']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「イクっ！イクよ！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]０']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [156, 156, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [19, HN4-b, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [14, HN4-16, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 95, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 90, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 115, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 130, volume: 60}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 130, volume: 60}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 115, volume: 60}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [40]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ・・・はぁっ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [19, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-19, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-20-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-20-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-19, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 125, volume: 50}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 135, volume: 40}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-19, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっ・・・ふっ・・・ふぅ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「全部射精た？なーがい射精だなぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「でたぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, HN4-35, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' ぶぴゅっ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [40]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [19]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うーわすっごい射精したなぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「こんな出したんだ僕・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「悪いけどちょっとティッシュと\.\^」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あそうだごめん！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [157, 157, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [18]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 38, 8, 4, 4, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 203, p: [1, 0, 7, 4, 6]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [87, 87, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆2渚立ち姿, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あぁもう終わったみたいだな、花火」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あ、ほんとだ音ないね」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「戻ったほうがいいな、ゆうだけ先行ってくれ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うん、そうだね。あの、また」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ん？そうだな・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「私もちょっとハマっちゃったかも・・・なんてな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [-1, 4, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [1, 4, false]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &8 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &9 !ruby/object:RPG::MoveCommand {code: 15, parameters: [5]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「じゃ、じゃあ！」']}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: true
+          wait: false
+          list:
+          - &10 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Run, pitch: 100, volume: 20}]}
+          - &11 !ruby/object:RPG::MoveCommand {code: 6, parameters: []}
+          - &12 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &13 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &14 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &15 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*13]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*15]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [character = get_character(1)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 655, p: [character.balloon_id = 14]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &16 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [8, 8, 0, 0, 151]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [16, 16, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [9, 9, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [6, 6, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [19]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 10, 25, 5, 2, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 7
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &17 !ruby/object:RPG::MoveCommand {code: 7, parameters: []}
+          - &18 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*18]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &19 !ruby/object:RPG::MoveCommand {code: 7, parameters: []}
+          - &20 !ruby/object:RPG::MoveCommand {code: 7, parameters: []}
+          - &21 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*19]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*20]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*21]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 7
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &22 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*22]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はぁっはぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [87, 87, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆3渚ベビードール, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「やる気まんまんだねぇ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ナギサさんもでしょ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L1, 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, HN7-R1, 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「どうかな～\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「そんなエロいの着てるくせに・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ふふ\I[122]興奮する？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「うん、もうほら」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 衣擦れ, pitch: 100, volume: 60}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [13, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 50, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: '', pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [7, 4, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「あらまぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　嬉しそうに白いテントを見つめる]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「・・・あれからオナニーした？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ううん、溜めてきたよ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [7, 4, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　やがて互いの視線が上がっていき]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [11, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 50, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 245, p: [!ruby/object:RPG::BGS {name: くちゅくちゅ２, volume: 80, pitch: 115}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [181, 181, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　貪るようにお互いの唇を、舌を舐め合う]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「へぁ・・・えぇろねろぇろ」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「唾液ちょうだい飲みたい」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L1a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [150]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「はっあぁう・・・」']}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &23 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*23]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　突然の快感に声を漏らす]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L4, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [50]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [150]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L5, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [50]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L6, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L7, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, HN7-L8, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ほんとら\I[122]ずっしり\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ナ、ナギサひゃん・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「んむー？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「イッちゃいそうらから、ちょっと」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「\I[122]\.\.キスしてるだけらろに\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [7, 7, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「ろぉする？口でする？']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　　それとも中入るならもう"準備"できてるよ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[口でしてもらう, ナギサさんの中に射精したい], 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, 口でしてもらう]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [181, 181, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN8-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「中身はどうかな～\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN8-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ほいっ・・・とぉ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN8-3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ん～\I[122]\.お風呂入ったなー？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「う、うんでも洗ってないよそこは」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふふ\I[122]そりゃどーも\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN8-3a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「じゃいただきまーす」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN8-4, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　ちゅぽ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [182, 182, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: 出し入れ, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あぁはぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「すご・・・うぁはぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おいしい？僕のおちんちんおいしい？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おいひーよ\I[122]食べてみる？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「いや無理だしいろいろ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふっふ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁっはぁあっ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [500]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ていうかやばい・・・イキそうなとこに口でされたら']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　　そりゃやばい・・・」]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN8-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [182, 182, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「このまま射精しとく？？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[射精させてもらう, 中出しするために溜めてきた], 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 射精させてもらう]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 123, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 121, p: [182, 182, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うん・・・１回だしとかないとあとでもたないかも」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「おっけー\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 245, p: [!ruby/object:RPG::BGS {name: 出し入れ, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [7, 7, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 245, p: [!ruby/object:RPG::BGS {name: 出し入れ, volume: 80, pitch: 150}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うぅは・・・すご・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「にゅるにゅる・・・さきっぽぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]３']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「はっ・・・はぁっ・・・イキそう・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]２']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「イクからね・・・飲んでね・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]１']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「イクっっ！！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]０']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-20, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 117, p: [4]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [7, 7, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ふっ！ぐっううっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-20, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ふっうっ・・・はぁっはぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [　頭をつかんで口内の奥で射精する]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [　抵抗することなく脈動を受け止めてくれる]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-18, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「はぁあ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-11, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-10a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-5, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [25]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 250, p: [!ruby/object:RPG::SE {name: 02　ちゅぽんSE（強）, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うぉっふぅ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-22, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「んぇ」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うわっ我ながら濃いなぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-23, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 250, p: [!ruby/object:RPG::SE {name: 3 飲む（強）3, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [13, HN8-24, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「んへぇあ～」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「きもちよかったぁ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 245, p: [!ruby/object:RPG::BGS {name: 出し入れ, volume: 60, pitch: 70}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「はぁあ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [150]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ろぉ？まらイケほ？」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「全然余裕」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「じゃちょっと休んでからしよっか\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 121, p: [182, 182, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「休むっていうかその間僕がせめるね」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ゆうが？まぁいいけど」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [手マン]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, 中出しするために溜めてきた]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 123, p: [B, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, true]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 121, p: [87, 87, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 231, p: [3, ☆3渚ベビードール, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, true]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「え～？\I[122]今日はちょっとなぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「だ、だめ？」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「人妻に（\I[122]危険日\I[122]）中出ししたいの？」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うん！うん！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「あ、わかって言ってる、ふーむ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 213, p: [7, 8, false]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「\}２人目も欲しかったしな・・・\{\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「僕の女にしたい！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「なーまいき言ってーｗ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ほ、ほんとに！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「わーかったｗ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「じゃほら、するか\.子作り\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うん！あでもその前にナギサさんほぐさないと」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「ん？私はもう準備できてるよ」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「やってみたいんだ、手マンとか！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 122, p: [29, 29, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 355, p: [character = get_character(7)]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 655, p: [character.balloon_id = 16]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「手マ・・・おっけーわかった」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [手マン]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, ナギサさんの中に射精したい]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [181, 181, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [6]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [87, 87, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [3, ☆3渚ベビードール, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「中ってここの中？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　言いながらお腹の下辺りを指差す]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「う、うん！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ん～」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [29, 29, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「今日危険日、赤ちゃんができやすい日なんだけど']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　　それでもいい？」]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん！うん！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　俄然元気に答える]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ちょ、しーっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あっごめんなさい」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [29, 29, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 213, p: [7, 8, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふーむ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　ベビーベッドの方を見ながら]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「２人目も欲しかったしな・・・\.\.\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [80]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [29, 29, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「よっし、じゃしてみるか\.子作り\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「する、する！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [29, 29, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「じゃどうする、さっそく」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「まずナギサさんの中をほぐします」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「え？私はもう準備できてるって」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「順番があるから」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [29, 29, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「そ、そうわかった」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 118, p: [手マン]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN9-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「色っぽい下着つけてるね～奥さん」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おやじか」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おっぱいも、いただきます」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 250, p: [!ruby/object:RPG::SE {name: 02　ちゅぽんSE（強）, pitch: 100, volume: 70}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「んっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: 高速舌動かし, volume: 30, pitch: 90}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「それで？気持ちよくしてもらえるのかな？\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ここ、かなクリトリス」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN9-2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ここ？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「そ、そう\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [183, 183, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あっうっはぁ・・・\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「痛くない？あってる？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「大丈夫・・・くっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁ・・・\I[122]んっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0](気持ちいいんだナギサさん)']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [250]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ね、ねぇもう準備できてると思うんだけど\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あ、じゃあちょっと確認してみるね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [11, HN9-8, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: 手コキ（低速）, volume: 65, pitch: 120}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0](発情してんの確認されてるみたいではずいなぁ・・・\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: 手コキ（低速）, volume: 65, pitch: 120}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「わっすごい濡れてる！グチョグチョだ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「くっ\I[122]おっ\I[122]ちょ、そこ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ここ？上のとこ？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　男性器では届かない場所を指を曲げて擦り上げると　]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　２本の指を強く締め付けてくる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「やば\I[122]あっ\I[122]うっ\I[122]あっあっ\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0](だいぶ余裕がなくなってきてるな)']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「激しくする？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「してっ\I[122]激しくしてっ\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: 手コキ（高速）, volume: 65, pitch: 130}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うっ\I[122]おっおっやばっ\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「イッグ\I[122]手マンでイグッ\I[122]\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN9-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 65, pitch: 130}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ぐっ\I[122]うっ\I[122]おぉっ\I[122]おっ\I[122]おほぉ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [183, 183, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はっ\I[122]あっ\I[122]はっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「だい・・・じょうぶ？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「んっ\I[122]平気ちょっと・・・っ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['  はぁ・・・\I[122]\.大丈夫\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [2, A, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「これで１勝１敗だね」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「\I[122]じゃ最終決戦といきますか\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 40, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [10, HN10-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [11, HN10-a-3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-8, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [2, A, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「はぁ\I[122]じゃ子作り\I[122]しますか\I[122]]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「うん、絶対孕ませるからね\.ナギサ」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「おっ\I[122]・・・はい、あなた\I[122]なーんて\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「入れるね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん、最初ちょいゆっくりたのむな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-4, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-9, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-5, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-10, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-6, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-11, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-7, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-12, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁあ～・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふっん\I[122]生チンポきたぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「やば・・・ちょっとこうしてるね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ん\I[122]あらあらもうギブアップかぁ？ｗ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あっちょ、締めないでよ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「早く突いてーんあなたーん\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（低速）１２回, volume: 40, pitch: 90}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「このっこのっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「んっ\I[122]無理しないでね\I[122]あなた\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [500]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あぁっあああぅ・・・！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「イッちゃいそう？我慢しないでいいよ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「で、でも・・・！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「いいから\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　そう言って頭を撫でてくれる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [2, A, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「絶対孕ませるから！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]３']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「奥に押し付けて射精するんだぞ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]２']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「あっあぁ！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]１']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [150]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「イクっ！でる！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]０']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「中でイクから！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]３']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]（あー危ない日だったっけ・・・まぁいっか\I[122]）']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]２']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「いいよ\I[122]奥で射精して\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]１']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 230, p: [150]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['　\C[0]「イクっ！でる！」']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['\C[27]０']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [17, HN10-27a, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [4]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ぐっ！うっ！おお！！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0](うわうわ\I[122]中でびちゃびちゃって聞こえる\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 110, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-12, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 90, volume: 55}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [13, HN10-汁3, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-7, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふっんっ！うっぐっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　下腹部に力をいれ、何度も肉棒を脈動させる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　大量の精液がナギサの膣内に流れ込む]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁっ・・・はぁっ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「全部奥に・・・流れ込むまでこうしてるね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ん\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [100]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ねぇ舌舐めさせて」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: くちゅくちゅ２, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ひもひよかっら？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ん\I[122]きもちかったよ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ぼくもっかいできるから、ナギサの唾液飲んで回復した」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あらほんと\I[122]中でおっきくなってきたねぇ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「よっと」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（低速）１２回, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あっ\I[122]これっ\I[122]あたるぅ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁっはぁっここっ？ここいい？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「そこっ\I[122]お腹の内側っ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [300]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はっあぁめっちゃ締め付けてくる！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「だって\I[122]そこ\I[122]突いてくるからぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [500]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ベロ吸わせて」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 6]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: くちゅくちゅ２, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「孕ませるからね、ちゃんと妊娠してね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「んっ\I[122]完全に孕みたがっちゃってる\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　　子宮降りてきちゃってる\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: ピストンやや乾き（中速）１９回, volume: 90, pitch: 120}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [6]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はっはぁっはぁっくっふぁ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うっ\I[122]すごっ\I[122]おちんぽっ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　　孕ませにきてるっ\I[122]とどめさされるっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [200]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 7]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: くちゅくちゅ２, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [500]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふっ！ふんっはっ！イキそう！はぁっ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]３']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「いいよ\I[122]孕んであげるから\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　　全部絞り出して\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]２']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [400]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「イクっイクよっナギサ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]１']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「孕めぇ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]０']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 224, p: [!ruby/object:Color {r: 255.0, g: 255.0, b: 255.0, a: 255.0}, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [18, HN10-27, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [4]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 8]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑦, pitch: 85, volume: 70}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [7]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 250, p: [!ruby/object:RPG::SE {name: 射精音・外出し（短い）⑥, pitch: 125, volume: 50}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ぐっ！ううっ！ううううっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [4]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [18]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['  体内で熟成された精液を他人の体内げ送り込む']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「はぁっはぁっ」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　奥へ流し込もうと腰を左右に揺する]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　重力に負けて尿道に残った精液も垂れてくる]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「は・・・\I[122]全部・・・でた？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん・・・もうちょっとこうしてる・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おっけー\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [120]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [11, HN10-b-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-16, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [13, HN10-汁2, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-22, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [　数分ほどこうしていると精力より体力の限界が先にきた]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あ・・・もっかいしようと思ってたんだけど・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「さーすがに無茶だって、今日だけじゃないしさ。な？」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん・・・もう全部奥まで届いたかな・・・抜くね」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 122, p: [7, 7, 0, 0, 9]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-15, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-21, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-14, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-20, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-13, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-19, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [28]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-25, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [28]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [12, HN10-18-1, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 231, p: [14, HN10-26, 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「ふぅ・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「おつかれさま\I[122]がんばったな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: くちゅくちゅ２, volume: 50, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん・・・がんばりまひた」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[27]【ナギサ】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「あんま時間ないけど、起こしてあげるから寝ときな\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['　\C[0]「うん・・・うん・・・」']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 241, p: [!ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 245, p: [!ruby/object:RPG::BGS {name: '', volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [180, 180, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [20]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [10]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [11]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [12]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [13]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [14]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [15]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [16]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [17]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [18]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 235, p: [19]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　プレイして頂きありがとうございました！]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　回想部屋へ移動します。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [106, 106, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 44, 10, 9, 8, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [46, 46, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 155
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: チビ
+    x: 5
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: 布団左上
+    x: 7
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 501
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: 布団右上
+    x: 8
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 502
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: 布団右下
+    x: 8
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 510
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  7: !ruby/object:RPG::Event
+    id: 7
+    name: ナギサルート154
+    x: 9
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 46
+        switch2_id: 1
+        variable_id: 8
+        variable_value: 154
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $雑貨屋ベビド
+        character_index: 0
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: true
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
+tileset_id: 10
+encounter_step: 30
+width: 18
+data: !ruby/object:Table
+  dim: 3
+  x: 18
+  y: 15
+  z: 4
+  data:
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 1b42 1b35 1b41 1b41 1b41 1b41 1b41 1b41 1b36 1b34 1b34 1b34 1b44 0000 0000
+  - 0000 0000 0000 1b30 1b38 1e82 1e82 1e82 1e82 1e82 1e82 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b30 1b38 1e88 1e88 1e88 1e88 1e88 1e88 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b30 1b38 0630 0631 0632 0631 0631 0638 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b30 1b38 0638 0638 0631 0632 0638 0638 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b30 1b38 0630 0630 0631 0632 0630 0630 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b30 1b38 0631 0631 0631 0631 0632 0632 1b30 1b20 1b20 1b20 1b38 0000 0000
+  - 0000 0000 0000 1b48 1b3e 1b41 1b41 1b41 1b41 1b41 1b41 1b3d 1b3c 1b3c 1b3c 1b46 0000 0000
+  - 0000 0000 0000 1e83 1e82 1e82 1e82 1e82 1e86 0630 1e83 1e82 1e82 1e82 1e82 1e86 0000 0000
+  - 0000 0000 0000 1e89 1e88 1e88 1e88 1e88 1e8c 0632 1e89 1e88 1e88 1e88 1e88 1e8c 0000 0000
+  - 0000 0000 0000 0639 0639 0639 063a 0639 063a 0639 063a 0639 0639 0639 0639 0639 0000 0000
+  - 0000 0000 0000 0639 0639 0639 063a 0639 063a 0639 063a 0639 0639 0639 0639 0639 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 00ff 0000 0306 0307 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 030e 030f 0000 032d 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0335 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 038e 0000 0000 0000 0000 006f 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: false
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

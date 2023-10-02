@@ -1,0 +1,557 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 13
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: エミル
+    x: 9
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $おっとり姉
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆0娘普段着, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆1娘パジャマ, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆2娘水着, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [コモンイベントピクチャ消しの前に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [会話スイッチをオフにする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: マリア
+    x: 7
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $母
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆0おばさん普段着, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆1おばさん寝間着, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆2おばさん水着, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆3おばさん半脱ぎ, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [コモンイベントピクチャ消しの前に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [会話スイッチをオフにする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: リサ
+    x: 5
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $勝ち気
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, ☆0勝ち気普段着, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着髪下ろし]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着髪下ろし]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着髪下ろし]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着髪下ろし]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, ☆0.5勝ち気普段着髪下ろし, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, ☆1勝ち気寝間着, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, ☆2勝ち気水着, 0, 0, 210, -40, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [コモンイベントピクチャ消しの前に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [会話スイッチをオフにする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: スクリプト置き場
+    x: 0
+    y: 0
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [フキダシアイコン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [m・・・イベントIDを指定。0でこのイベント、-1でプレーヤー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [n・・・ふきだしの画像を指定。一番上の画像が1。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [character = get_character(m)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 655, p: [character.balloon_id = n]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['11:ガーン！']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['12:ワイワイ赤']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['13:キラキラ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['14:ワイワイオレンジ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['15:ピヨピヨ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['16:あせあせ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['17:ねむねむ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['18:ほかほか']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['19:テレテレ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\I[122]でハート']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\I[528]であせあせ　\I[529]でわいわい　\I[530]であせ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\I[531]でテレ　\I[532]で怒り']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [12, '$game_variables[8] == 55 || $game_variables[8] == 59']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: ハルカ先生
+    x: 11
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $教師普段着
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[27]【】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆0教師普段着, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [怒り]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [怒り]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆1教師ムッ, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [発情]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [発情]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆2教師照れ, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [発情顔(教師表情変数5)は会話の途中で差し込む場合]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [前後に会話終了コモンイベントを挟む]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [そのまま会話が続く場合会話スイッチオンからリスタートする]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: 主人公
+    x: 3
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 主人公その他
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[9]【ゆう】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  7: !ruby/object:RPG::Event
+    id: 7
+    name: その他
+    x: 5
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 主人公その他
+        character_index: 5
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[2]【】']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[0]「」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  8: !ruby/object:RPG::Event
+    id: 8
+    name: レア
+    x: 7
+    y: 10
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $女医白衣
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [普段着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆0女医着席, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [寝間着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆1女医白衣立ち, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [水着]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, ☆2女医普段着, 0, 0, 210, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [半脱ぎ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
+tileset_id: 1
+encounter_step: 30
+width: 17
+data: !ruby/object:Table
+  dim: 3
+  x: 17
+  y: 13
+  z: 4
+  data:
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: false
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''
