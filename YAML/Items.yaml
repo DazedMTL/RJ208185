@@ -1,537 +1,540 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Item
-  description: ＨＰを５００ポイント回復する。
-  name: ポーション
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 50
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 1
-  features: []
-  effects:
+  'description': 'Recovers 500 points of HP.'
+  'name': 'Potion'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '50'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '1'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 0.0
-    value2: 500.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '500.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＨＰを２５００ポイント回復する。
-  name: ハイポーション
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 150
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 2
-  features: []
-  effects:
+  'description': 'Recovers 2500 points of HP.'
+  'name': 'Hi-Potion'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '150'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '2'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 0.0
-    value2: 2500.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '2500.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＨＰを完全に回復する。
-  name: フルポーション
-  consumable: true
-  occasion: 0
-  icon_index: 192
-  price: 450
-  scope: 7
-  animation_id: 37
-  note: ''
-  speed: 0
-  id: 3
-  features: []
-  effects:
+  'description': 'Fully restores HP.'
+  'name': 'Full Potion'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '192'
+  'price': !!int '450'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '3'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＭＰを２００ポイント回復する。
-  name: マジックウォーター
-  consumable: true
-  occasion: 0
-  icon_index: 193
-  price: 300
-  scope: 7
-  animation_id: 38
-  note: ''
-  speed: 0
-  id: 4
-  features: []
-  effects:
+  'description': 'Restore 200 MP points.'
+  'name': 'Magic Water'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '193'
+  'price': !!int '300'
+  'scope': !!int '7'
+  'animation_id': !!int '38'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '4'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 12
-    data_id: 0
-    value1: 0.0
-    value2: 200.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '12'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '200.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 戦闘不能から復活させる。
-  name: スティミュラント
-  consumable: true
-  occasion: 0
-  icon_index: 194
-  price: 250
-  scope: 9
-  animation_id: 42
-  note: ''
-  speed: 0
-  id: 5
-  features: []
-  effects:
+  'description': 'Revive from incapacitation.'
+  'name': 'Stimulant'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '194'
+  'price': !!int '250'
+  'scope': !!int '9'
+  'animation_id': !!int '42'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '5'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 1
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 毒状態を治療する。
-  name: アンチドーテ
-  consumable: true
-  occasion: 0
-  icon_index: 194
-  price: 30
-  scope: 7
-  animation_id: 40
-  note: ''
-  speed: 0
-  id: 6
-  features: []
-  effects:
+  'description': 'To treat the poisoned state.'
+  'name': 'Antidote'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '194'
+  'price': !!int '30'
+  'scope': !!int '7'
+  'animation_id': !!int '40'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '6'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 戦闘不能以外の状態異常を治療する。
-  name: ディスペルハーブ
-  consumable: true
-  occasion: 0
-  icon_index: 194
-  price: 90
-  scope: 7
-  animation_id: 41
-  note: ''
-  speed: 0
-  id: 7
-  features: []
-  effects:
+  'description': 'Heals status ailments other than incapacitation.'
+  'name': 'Dispel Herb'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '194'
+  'price': !!int '90'
+  'scope': !!int '7'
+  'animation_id': !!int '41'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '7'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 3
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 4
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '4'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 5
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '5'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 6
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '22'
+    'data_id': !!int '6'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 7
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: ＨＰとＭＰを完全に回復する。
-  name: エリクサー
-  consumable: true
-  occasion: 0
-  icon_index: 197
-  price: 1000
-  scope: 7
-  animation_id: 39
-  note: ''
-  speed: 0
-  id: 8
-  features: []
-  effects:
+  'description': 'Fully restores HP and MP.'
+  'name': 'Elixir'
+  'consumable': !!bool 'true'
+  'occasion': !!int '0'
+  'icon_index': !!int '197'
+  'price': !!int '1000'
+  'scope': !!int '7'
+  'animation_id': !!int '39'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '8'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 11
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
+    'code': !!int '11'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
   - !ruby/object:RPG::UsableItem::Effect
-    code: 12
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '12'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 最大ＨＰを５０ポイント上げる。
-  name: ライフアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 9
-  features: []
-  effects:
+  'description': 'Increase maximum HP by 50 points.'
+  'name': 'Life Up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '9'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 0
-    value1: 50.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '0'
+    'value1': !!float '50.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 最大ＭＰを１０ポイント上げる。
-  name: マナアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 10
-  features: []
-  effects:
+  'description': 'Increase maximum MP by 10 points.'
+  'name': 'Mana Up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '10'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 1
-    value1: 10.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '1'
+    'value1': !!float '10.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 攻撃力を３ポイント上げる。
-  name: パワーアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 11
-  features: []
-  effects:
+  'description': 'Increase attack power by 3 points.'
+  'name': 'Power-up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '11'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 2
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '2'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 防御力を３ポイント上げる。
-  name: ガードアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 12
-  features: []
-  effects:
+  'description': 'Increase defense power by 3 points.'
+  'name': 'Guard Up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '12'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 3
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '3'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 魔法力を３ポイント上げる。
-  name: マジックアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 13
-  features: []
-  effects:
+  'description': 'Increase magic power by 3 points.'
+  'name': 'Magic Up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '13'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 4
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '4'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 魔法防御を３ポイント上げる。
-  name: レジストアップ
-  consumable: true
-  occasion: 2
-  icon_index: 199
-  price: 200
-  scope: 7
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 14
-  features: []
-  effects:
+  'description': 'Increase magic defense by 3 points.'
+  'name': 'Resist Up'
+  'consumable': !!bool 'true'
+  'occasion': !!int '2'
+  'icon_index': !!int '199'
+  'price': !!int '200'
+  'scope': !!int '7'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '14'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 42
-    data_id: 5
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '42'
+    'data_id': !!int '5'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: CGが消えないままになっている場合にお使いください
-  name: ピクチャ消し
-  consumable: false
-  occasion: 0
-  icon_index: 0
-  price: 0
-  scope: 0
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 15
-  features: []
-  effects:
+  'description': 'Please use this if the CG is still visible.'
+  'name': 'Picture Eraser'
+  'consumable': !!bool 'false'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'price': !!int '0'
+  'scope': !!int '0'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '15'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 44
-    data_id: 11
-    value1: 0.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '44'
+    'data_id': !!int '11'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: 何をしていいかわからないときに読もう
-  name: やることメモ
-  consumable: false
-  occasion: 2
-  icon_index: 234
-  price: 0
-  scope: 0
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 16
-  features: []
-  effects:
+  'description': 'Read it when you don''t know what to do.'
+  'name': 'To-do List'
+  'consumable': !!bool 'false'
+  'occasion': !!int '2'
+  'icon_index': !!int '234'
+  'price': !!int '0'
+  'scope': !!int '0'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '16'
+  'features': []
+  'effects':
   - !ruby/object:RPG::UsableItem::Effect
-    code: 44
-    data_id: 1
-    value1: 0.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 2
-  repeats: 1
-  tp_gain: 0
+    'code': !!int '44'
+    'data_id': !!int '1'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '2'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
 - !ruby/object:RPG::Item
-  description: "おちんちんを女の人の中に入れるときにつけるもの\r\nこれがないと妊娠しちゃうんだって　12個入り"
-  name: コンドーム
-  consumable: false
-  occasion: 3
-  icon_index: 256
-  price: 0
-  scope: 0
-  animation_id: 0
-  note: ''
-  speed: 0
-  id: 17
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  itype_id: 1
-  repeats: 1
-  tp_gain: 0
+  'description': 'This is something you use when inserting a penis into a
+
+    woman. Without this, you might get pregnant. Comes in a pack
+
+    of 12.'
+  'name': 'Condom'
+  'consumable': !!bool 'false'
+  'occasion': !!int '3'
+  'icon_index': !!int '256'
+  'price': !!int '0'
+  'scope': !!int '0'
+  'animation_id': !!int '0'
+  'note': ''
+  'speed': !!int '0'
+  'id': !!int '17'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'itype_id': !!int '1'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'

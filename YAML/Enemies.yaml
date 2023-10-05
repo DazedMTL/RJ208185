@@ -1,2164 +1,2163 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Enemy
-  name: スライム
-  gold: 5
-  battler_hue: 0
-  exp: 3
-  hit: 95
-  battler_name: Slime
-  actions:
+  'name': 'Slime'
+  'gold': !!int '5'
+  'battler_hue': !!int '0'
+  'exp': !!int '3'
+  'hit': !!int '95'
+  'battler_name': 'Slime'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 1
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '1'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 2.0
-  params:
-  - 100
-  - 0
-  - 12
-  - 4
-  - 8
-  - 8
-  - 10
-  - 10
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '2.0'
+  'params':
+  - !!int '100'
+  - !!int '0'
+  - !!int '12'
+  - !!int '4'
+  - !!int '8'
+  - !!int '8'
+  - !!int '10'
+  - !!int '10'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: こうもり
-  gold: 10
-  battler_hue: 0
-  exp: 5
-  hit: 95
-  battler_name: Bat
-  actions:
+  'name': 'Bat'
+  'gold': !!int '10'
+  'battler_hue': !!int '0'
+  'exp': !!int '5'
+  'hit': !!int '95'
+  'battler_name': 'Bat'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 2
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '2'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 3
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 2.0
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '2.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.5
-  params:
-  - 140
-  - 0
-  - 14
-  - 6
-  - 9
-  - 9
-  - 12
-  - 12
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.5'
+  'params':
+  - !!int '140'
+  - !!int '0'
+  - !!int '14'
+  - !!int '6'
+  - !!int '9'
+  - !!int '9'
+  - !!int '12'
+  - !!int '12'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ホーネット
-  gold: 15
-  battler_hue: 0
-  exp: 8
-  hit: 95
-  battler_name: Hornet
-  actions:
+  'name': 'Hornet'
+  'gold': !!int '15'
+  'battler_hue': !!int '0'
+  'exp': !!int '8'
+  'hit': !!int '95'
+  'battler_name': 'Hornet'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 3
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '3'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 2
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 0.1
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '0.1'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.5
-  params:
-  - 180
-  - 0
-  - 16
-  - 7
-  - 12
-  - 12
-  - 16
-  - 16
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.5'
+  'params':
+  - !!int '180'
+  - !!int '0'
+  - !!int '16'
+  - !!int '7'
+  - !!int '12'
+  - !!int '12'
+  - !!int '16'
+  - !!int '16'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 大グモ
-  gold: 25
-  battler_hue: 0
-  exp: 13
-  hit: 95
-  battler_name: Spider
-  actions:
+  'name': 'Big Spider'
+  'gold': !!int '25'
+  'battler_hue': !!int '0'
+  'exp': !!int '13'
+  'hit': !!int '95'
+  'battler_name': 'Spider'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 4
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '4'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 2
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 2.0
-  params:
-  - 220
-  - 0
-  - 18
-  - 8
-  - 14
-  - 14
-  - 18
-  - 18
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '2.0'
+  'params':
+  - !!int '220'
+  - !!int '0'
+  - !!int '18'
+  - !!int '8'
+  - !!int '14'
+  - !!int '14'
+  - !!int '18'
+  - !!int '18'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 大ネズミ
-  gold: 40
-  battler_hue: 0
-  exp: 19
-  hit: 95
-  battler_name: Rat
-  actions:
+  'name': 'Big Rat'
+  'gold': !!int '40'
+  'battler_hue': !!int '0'
+  'exp': !!int '19'
+  'hit': !!int '95'
+  'battler_name': 'Rat'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 21
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 5
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '21'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '5'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
-  params:
-  - 300
-  - 0
-  - 20
-  - 9
-  - 16
-  - 16
-  - 22
-  - 22
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
+  'params':
+  - !!int '300'
+  - !!int '0'
+  - !!int '20'
+  - !!int '9'
+  - !!int '16'
+  - !!int '16'
+  - !!int '22'
+  - !!int '22'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ウィスプ
-  gold: 50
-  battler_hue: 0
-  exp: 26
-  hit: 95
-  battler_name: Willowisp
-  actions:
+  'name': 'Wisp'
+  'gold': !!int '50'
+  'battler_hue': !!int '0'
+  'exp': !!int '26'
+  'hit': !!int '95'
+  'battler_name': 'Willowisp'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 51
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 6
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '51'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '6'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 7
-    value: 0.15
+    'code': !!int '32'
+    'data_id': !!int '7'
+    'value': !!float '0.15'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.5
-  params:
-  - 350
-  - 60
-  - 30
-  - 20
-  - 18
-  - 18
-  - 24
-  - 24
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.5'
+  'params':
+  - !!int '350'
+  - !!int '60'
+  - !!int '30'
+  - !!int '20'
+  - !!int '18'
+  - !!int '18'
+  - !!int '24'
+  - !!int '24'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 大蛇
-  gold: 70
-  battler_hue: 0
-  exp: 34
-  hit: 95
-  battler_name: Snake
-  actions:
+  'name': 'Orochi'
+  'gold': !!int '70'
+  'battler_hue': !!int '0'
+  'exp': !!int '34'
+  'hit': !!int '95'
+  'battler_name': 'Snake'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 4
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 7
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '4'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '7'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 2.0
-  params:
-  - 400
-  - 0
-  - 28
-  - 20
-  - 20
-  - 20
-  - 28
-  - 28
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '2.0'
+  'params':
+  - !!int '400'
+  - !!int '0'
+  - !!int '28'
+  - !!int '20'
+  - !!int '20'
+  - !!int '20'
+  - !!int '28'
+  - !!int '28'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 大サソリ
-  gold: 90
-  battler_hue: 0
-  exp: 43
-  hit: 95
-  battler_name: Scorpion
-  actions:
+  'name': 'Giant Scorpion'
+  'gold': !!int '90'
+  'battler_hue': !!int '0'
+  'exp': !!int '43'
+  'hit': !!int '95'
+  'battler_name': 'Scorpion'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 8
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '8'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 2
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 1.5
-  params:
-  - 450
-  - 0
-  - 36
-  - 30
-  - 25
-  - 25
-  - 30
-  - 30
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '1.5'
+  'params':
+  - !!int '450'
+  - !!int '0'
+  - !!int '36'
+  - !!int '30'
+  - !!int '25'
+  - !!int '25'
+  - !!int '30'
+  - !!int '30'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 大クラゲ
-  gold: 105
-  battler_hue: 0
-  exp: 53
-  hit: 95
-  battler_name: Jellyfish
-  actions:
+  'name': 'Big Jellyfish'
+  'gold': !!int '105'
+  'battler_hue': !!int '0'
+  'exp': !!int '53'
+  'hit': !!int '95'
+  'battler_name': 'Jellyfish'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 9
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '9'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 3
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 2.0
-  params:
-  - 500
-  - 0
-  - 32
-  - 15
-  - 25
-  - 25
-  - 32
-  - 32
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '2.0'
+  'params':
+  - !!int '500'
+  - !!int '0'
+  - !!int '32'
+  - !!int '15'
+  - !!int '25'
+  - !!int '25'
+  - !!int '32'
+  - !!int '32'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 食人花
-  gold: 130
-  battler_hue: 0
-  exp: 63
-  hit: 95
-  battler_name: Plant
-  actions:
+  'name': 'Man-eating flower'
+  'gold': !!int '130'
+  'battler_hue': !!int '0'
+  'exp': !!int '63'
+  'hit': !!int '95'
+  'battler_name': 'Plant'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 17
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 10
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '17'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '10'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 0.5
-  params:
-  - 600
-  - 0
-  - 40
-  - 17
-  - 30
-  - 30
-  - 36
-  - 36
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '0.5'
+  'params':
+  - !!int '600'
+  - !!int '0'
+  - !!int '40'
+  - !!int '17'
+  - !!int '30'
+  - !!int '30'
+  - !!int '36'
+  - !!int '36'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ゴースト
-  gold: 150
-  battler_hue: 0
-  exp: 75
-  hit: 95
-  battler_name: Ghost
-  actions:
+  'name': 'Ghost'
+  'gold': !!int '150'
+  'battler_hue': !!int '0'
+  'exp': !!int '75'
+  'hit': !!int '95'
+  'battler_name': 'Ghost'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 51
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 11
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '51'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '11'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 10
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '10'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 1
-    value: 0.75
+    'code': !!int '11'
+    'data_id': !!int '1'
+    'value': !!float '0.75'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 2
-    value: 0.0
+    'code': !!int '11'
+    'data_id': !!int '2'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 9
-    value: 2.0
+    'code': !!int '11'
+    'data_id': !!int '9'
+    'value': !!float '2.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0
-  params:
-  - 700
-  - 80
-  - 48
-  - 20
-  - 40
-  - 40
-  - 38
-  - 38
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!int '0'
+  'params':
+  - !!int '700'
+  - !!int '80'
+  - !!int '48'
+  - !!int '20'
+  - !!int '40'
+  - !!int '40'
+  - !!int '38'
+  - !!int '38'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: スケルトン
-  gold: 180
-  battler_hue: 0
-  exp: 87
-  hit: 95
-  battler_name: Skeleton
-  actions:
+  'name': 'Skeleton'
+  'gold': !!int '180'
+  'battler_hue': !!int '0'
+  'exp': !!int '87'
+  'hit': !!int '95'
+  'battler_name': 'Skeleton'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 12
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '12'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 3
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 2
-    value: 0.0
+    'code': !!int '11'
+    'data_id': !!int '2'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 9
-    value: 2.0
-  params:
-  - 800
-  - 0
-  - 50
-  - 25
-  - 35
-  - 35
-  - 40
-  - 40
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '9'
+    'value': !!float '2.0'
+  'params':
+  - !!int '800'
+  - !!int '0'
+  - !!int '50'
+  - !!int '25'
+  - !!int '35'
+  - !!int '35'
+  - !!int '40'
+  - !!int '40'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: オーク
-  gold: 200
-  battler_hue: 0
-  exp: 99
-  hit: 95
-  battler_name: Orc
-  actions:
+  'name': 'Orc'
+  'gold': !!int '200'
+  'battler_hue': !!int '0'
+  'exp': !!int '99'
+  'hit': !!int '95'
+  'battler_name': 'Orc'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 20
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 13
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '20'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '13'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 2.0
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '2.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.1
-  params:
-  - 850
-  - 0
-  - 55
-  - 30
-  - 30
-  - 30
-  - 42
-  - 42
-  drop_items:
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.1'
+  'params':
+  - !!int '850'
+  - !!int '0'
+  - !!int '55'
+  - !!int '30'
+  - !!int '30'
+  - !!int '30'
+  - !!int '42'
+  - !!int '42'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: インプ
-  gold: 220
-  battler_hue: 0
-  exp: 110
-  hit: 95
-  battler_name: Imp
-  actions:
+  'name': 'Imp'
+  'gold': !!int '220'
+  'battler_hue': !!int '0'
+  'exp': !!int '110'
+  'hit': !!int '95'
+  'battler_name': 'Imp'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 55
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '55'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 50
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 14
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '50'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '14'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 2.0
-  params:
-  - 900
-  - 150
-  - 60
-  - 32
-  - 40
-  - 40
-  - 45
-  - 45
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '2.0'
+  'params':
+  - !!int '900'
+  - !!int '150'
+  - !!int '60'
+  - !!int '32'
+  - !!int '40'
+  - !!int '40'
+  - !!int '45'
+  - !!int '45'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ゲイザー
-  gold: 250
-  battler_hue: 0
-  exp: 130
-  hit: 95
-  battler_name: Gayzer
-  actions:
+  'name': 'Gazer'
+  'gold': !!int '250'
+  'battler_hue': !!int '0'
+  'exp': !!int '130'
+  'hit': !!int '95'
+  'battler_name': 'Gayzer'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 23
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 15
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '23'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '15'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 6
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '6'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 2.0
-  params:
-  - 950
-  - 0
-  - 65
-  - 35
-  - 40
-  - 40
-  - 50
-  - 50
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '2.0'
+  'params':
+  - !!int '950'
+  - !!int '0'
+  - !!int '65'
+  - !!int '35'
+  - !!int '40'
+  - !!int '40'
+  - !!int '50'
+  - !!int '50'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: パペット
-  gold: 280
-  battler_hue: 0
-  exp: 160
-  hit: 95
-  battler_name: Puppet
-  actions:
+  'name': 'Puppet'
+  'gold': !!int '280'
+  'battler_hue': !!int '0'
+  'exp': !!int '160'
+  'hit': !!int '95'
+  'battler_name': 'Puppet'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 53
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '53'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 65
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 16
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '65'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '16'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100.0
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!float '100.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 1.5
-  params:
-  - 1000
-  - 200
-  - 70
-  - 40
-  - 35
-  - 35
-  - 55
-  - 55
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '1.5'
+  'params':
+  - !!int '1000'
+  - !!int '200'
+  - !!int '70'
+  - !!int '40'
+  - !!int '35'
+  - !!int '35'
+  - !!int '55'
+  - !!int '55'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ゾンビ
-  gold: 320
-  battler_hue: 0
-  exp: 180
-  hit: 95
-  battler_name: Zombie
-  actions:
+  'name': 'Zombie'
+  'gold': !!int '320'
+  'battler_hue': !!int '0'
+  'exp': !!int '180'
+  'hit': !!int '95'
+  'battler_name': 'Zombie'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 4
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 17
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '4'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '17'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 2
-    value: 0.0
+    'code': !!int '11'
+    'data_id': !!int '2'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 9
-    value: 2.0
-  params:
-  - 1050
-  - 0
-  - 75
-  - 40
-  - 45
-  - 45
-  - 50
-  - 50
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '9'
+    'value': !!float '2.0'
+  'params':
+  - !!int '1050'
+  - !!int '0'
+  - !!int '75'
+  - !!int '40'
+  - !!int '45'
+  - !!int '45'
+  - !!int '50'
+  - !!int '50'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: コカトリス
-  gold: 400
-  battler_hue: 0
-  exp: 260
-  hit: 95
-  battler_name: Cockatrice
-  actions:
+  'name': 'Cockatrice'
+  'gold': !!int '400'
+  'battler_hue': !!int '0'
+  'exp': !!int '260'
+  'hit': !!int '95'
+  'battler_name': 'Cockatrice'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 10
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '10'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 19
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 18
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '19'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '18'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 2.0
-  params:
-  - 1100
-  - 0
-  - 80
-  - 50
-  - 40
-  - 40
-  - 60
-  - 60
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '2.0'
+  'params':
+  - !!int '1100'
+  - !!int '0'
+  - !!int '80'
+  - !!int '50'
+  - !!int '40'
+  - !!int '40'
+  - !!int '60'
+  - !!int '60'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: キマイラ
-  gold: 900
-  battler_hue: 0
-  exp: 450
-  hit: 95
-  battler_name: Chimera
-  actions:
+  'name': 'Chimera'
+  'gold': !!int '900'
+  'battler_hue': !!int '0'
+  'exp': !!int '450'
+  'hit': !!int '95'
+  'battler_name': 'Chimera'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 4
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '4'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 9
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '9'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 18
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 19
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '18'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '19'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 2.0
-  params:
-  - 1200
-  - 0
-  - 85
-  - 45
-  - 50
-  - 50
-  - 60
-  - 60
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '2.0'
+  'params':
+  - !!int '1200'
+  - !!int '0'
+  - !!int '85'
+  - !!int '45'
+  - !!int '50'
+  - !!int '50'
+  - !!int '60'
+  - !!int '60'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ミミック
-  gold: 1600
-  battler_hue: 0
-  exp: 700
-  hit: 95
-  battler_name: Mimic
-  actions:
+  'name': 'Mimic'
+  'gold': !!int '1600'
+  'battler_hue': !!int '0'
+  'exp': !!int '700'
+  'hit': !!int '95'
+  'battler_name': 'Mimic'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 12
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 20
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '12'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '20'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.1'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 5
-    value: 0.2
+    'code': !!int '32'
+    'data_id': !!int '5'
+    'value': !!float '0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.2
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 61
-    data_id: 0
-    value: 0.5
-  params:
-  - 2000
-  - 0
-  - 100
-  - 65
-  - 60
-  - 60
-  - 65
-  - 65
-  drop_items:
+    'code': !!int '61'
+    'data_id': !!int '0'
+    'value': !!float '0.5'
+  'params':
+  - !!int '2000'
+  - !!int '0'
+  - !!int '100'
+  - !!int '65'
+  - !!int '60'
+  - !!int '60'
+  - !!int '65'
+  - !!int '65'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ウェアウルフ
-  gold: 1300
-  battler_hue: 0
-  exp: 660
-  hit: 95
-  battler_name: Werewolf
-  actions:
+  'name': 'Werewolf'
+  'gold': !!int '1300'
+  'battler_hue': !!int '0'
+  'exp': !!int '660'
+  'hit': !!int '95'
+  'battler_name': 'Werewolf'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 22
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 21
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '22'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '21'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 2
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.1
-  params:
-  - 1600
-  - 0
-  - 90
-  - 70
-  - 65
-  - 65
-  - 70
-  - 70
-  drop_items:
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.1'
+  'params':
+  - !!int '1600'
+  - !!int '0'
+  - !!int '90'
+  - !!int '70'
+  - !!int '65'
+  - !!int '65'
+  - !!int '70'
+  - !!int '70'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: サハギン
-  gold: 1800
-  battler_hue: 0
-  exp: 690
-  hit: 95
-  battler_name: Sahagin
-  actions:
+  'name': 'Sahagin'
+  'gold': !!int '1800'
+  'battler_hue': !!int '0'
+  'exp': !!int '690'
+  'hit': !!int '95'
+  'battler_name': 'Sahagin'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 4
-    skill_id: 13
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '4'
+    'skill_id': !!int '13'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 64
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 22
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '64'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '22'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 2.0
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '2.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 0.5
-  params:
-  - 1800
-  - 400
-  - 110
-  - 75
-  - 60
-  - 60
-  - 80
-  - 80
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '0.5'
+  'params':
+  - !!int '1800'
+  - !!int '400'
+  - !!int '110'
+  - !!int '75'
+  - !!int '60'
+  - !!int '60'
+  - !!int '80'
+  - !!int '80'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: オーガ
-  gold: 3200
-  battler_hue: 0
-  exp: 1600
-  hit: 80
-  battler_name: Ogre
-  actions:
+  'name': 'Ogre'
+  'gold': !!int '3200'
+  'battler_hue': !!int '0'
+  'exp': !!int '1600'
+  'hit': !!int '80'
+  'battler_name': 'Ogre'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 21
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 23
-  eva: 0
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '21'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '23'
+  'eva': !!int '0'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.75
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.75'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.15
-  params:
-  - 2600
-  - 0
-  - 140
-  - 80
-  - 50
-  - 50
-  - 70
-  - 70
-  drop_items:
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.15'
+  'params':
+  - !!int '2600'
+  - !!int '0'
+  - !!int '140'
+  - !!int '80'
+  - !!int '50'
+  - !!int '50'
+  - !!int '70'
+  - !!int '70'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ガーゴイル
-  gold: 2400
-  battler_hue: 0
-  exp: 1400
-  hit: 95
-  battler_name: Gargoyle
-  actions:
+  'name': 'Gargoyle'
+  'gold': !!int '2400'
+  'battler_hue': !!int '0'
+  'exp': !!int '1400'
+  'hit': !!int '95'
+  'battler_name': 'Gargoyle'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 4
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '4'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 8
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '8'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 19
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 24
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '19'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '24'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0.5
-  params:
-  - 2400
-  - 0
-  - 130
-  - 80
-  - 70
-  - 70
-  - 90
-  - 90
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!float '0.5'
+  'params':
+  - !!int '2400'
+  - !!int '0'
+  - !!int '130'
+  - !!int '80'
+  - !!int '70'
+  - !!int '70'
+  - !!int '90'
+  - !!int '90'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ラミア
-  gold: 4400
-  battler_hue: 0
-  exp: 2600
-  hit: 95
-  battler_name: Lamia
-  actions:
+  'name': 'Lamia'
+  'gold': !!int '4400'
+  'battler_hue': !!int '0'
+  'exp': !!int '2600'
+  'hit': !!int '95'
+  'battler_name': 'Lamia'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 16
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '16'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 4
-    skill_id: 15
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 25
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '4'
+    'skill_id': !!int '15'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '25'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 3
-    value: 0.25
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value': !!float '0.25'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 2.0
-  params:
-  - 3200
-  - 1000
-  - 120
-  - 90
-  - 80
-  - 80
-  - 95
-  - 95
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '2.0'
+  'params':
+  - !!int '3200'
+  - !!int '1000'
+  - !!int '120'
+  - !!int '90'
+  - !!int '80'
+  - !!int '80'
+  - !!int '95'
+  - !!int '95'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: ヴァンパイア
-  gold: 5600
-  battler_hue: 0
-  exp: 3000
-  hit: 95
-  battler_name: Vampire
-  actions:
+  'name': 'Vampire'
+  'gold': !!int '5600'
+  'battler_hue': !!int '0'
+  'exp': !!int '3000'
+  'hit': !!int '95'
+  'battler_name': 'Vampire'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 3
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '3'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 23
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '23'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 3
-    skill_id: 11
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '3'
+    'skill_id': !!int '11'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 58
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 26
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '58'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '26'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 9
-    value: 2.0
+    'code': !!int '11'
+    'data_id': !!int '9'
+    'value': !!float '2.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.1
-  params:
-  - 5200
-  - 2000
-  - 135
-  - 100
-  - 90
-  - 90
-  - 100
-  - 100
-  drop_items:
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.1'
+  'params':
+  - !!int '5200'
+  - !!int '2000'
+  - !!int '135'
+  - !!int '100'
+  - !!int '90'
+  - !!int '90'
+  - !!int '100'
+  - !!int '100'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: サキュバス
-  gold: 8000
-  battler_hue: 0
-  exp: 4000
-  hit: 95
-  battler_name: Succubus
-  actions:
+  'name': 'Succubus'
+  'gold': !!int '8000'
+  'battler_hue': !!int '0'
+  'exp': !!int '4000'
+  'hit': !!int '95'
+  'battler_name': 'Succubus'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 2
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '2'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 1
-    rating: 5
-    skill_id: 38
-    condition_param2: 4
-    condition_param1: 0
+    'condition_type': !!int '1'
+    'rating': !!int '5'
+    'skill_id': !!int '38'
+    'condition_param2': !!int '4'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 4
-    skill_id: 39
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '4'
+    'skill_id': !!int '39'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 49
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 27
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '49'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '27'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 32
-    data_id: 5
-    value: 0.2
-  params:
-  - 6000
-  - 3000
-  - 150
-  - 120
-  - 100
-  - 100
-  - 110
-  - 110
-  drop_items:
+    'code': !!int '32'
+    'data_id': !!int '5'
+    'value': !!float '0.2'
+  'params':
+  - !!int '6000'
+  - !!int '3000'
+  - !!int '150'
+  - !!int '120'
+  - !!int '100'
+  - !!int '100'
+  - !!int '110'
+  - !!int '110'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: デーモン
-  gold: 12000
-  battler_hue: 0
-  exp: 6500
-  hit: 95
-  battler_name: Demon
-  actions:
+  'name': 'Daemon'
+  'gold': !!int '12000'
+  'battler_hue': !!int '0'
+  'exp': !!int '6500'
+  'hit': !!int '95'
+  'battler_name': 'Demon'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 4
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '4'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 1
-    rating: 4
-    skill_id: 36
-    condition_param2: 3
-    condition_param1: 1
+    'condition_type': !!int '1'
+    'rating': !!int '4'
+    'skill_id': !!int '36'
+    'condition_param2': !!int '3'
+    'condition_param1': !!int '1'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 1
-    rating: 8
-    skill_id: 41
-    condition_param2: 7
-    condition_param1: 2
+    'condition_type': !!int '1'
+    'rating': !!int '8'
+    'skill_id': !!int '41'
+    'condition_param2': !!int '7'
+    'condition_param1': !!int '2'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 4
-    skill_id: 71
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '4'
+    'skill_id': !!int '71'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 4
-    skill_id: 54
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 28
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '4'
+    'skill_id': !!int '54'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '28'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 9
-    value: 1.5
+    'code': !!int '11'
+    'data_id': !!int '9'
+    'value': !!float '1.5'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0.5
-  params:
-  - 8000
-  - 5000
-  - 170
-  - 120
-  - 120
-  - 120
-  - 120
-  - 120
-  drop_items:
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!float '0.5'
+  'params':
+  - !!int '8000'
+  - !!int '5000'
+  - !!int '170'
+  - !!int '120'
+  - !!int '120'
+  - !!int '120'
+  - !!int '120'
+  - !!int '120'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 魔王
-  gold: 30000
-  battler_hue: 0
-  exp: 15000
-  hit: 95
-  battler_name: Darklord
-  actions:
+  'name': 'Demon King'
+  'gold': !!int '30000'
+  'battler_hue': !!int '0'
+  'exp': !!int '15000'
+  'hit': !!int '95'
+  'battler_name': 'Darklord'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 6
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '6'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 54
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '54'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 58
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '58'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 62
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '62'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 72
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '72'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 46
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '46'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 2
-    rating: 5
-    skill_id: 24
-    condition_param2: 0.8
-    condition_param1: 0
-  note: ''
-  id: 29
-  eva: 5
-  features:
+    'condition_type': !!int '2'
+    'rating': !!int '5'
+    'skill_id': !!int '24'
+    'condition_param2': !!float '0.8'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '29'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 1
-    value: 0.0
+    'code': !!int '13'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 5
-    value: 0.0
+    'code': !!int '13'
+    'data_id': !!int '5'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 2
-    value: 0.1
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value': !!float '0.1'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: 0.2
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 61
-    data_id: 0
-    value: 1.0
+    'code': !!int '61'
+    'data_id': !!int '0'
+    'value': !!float '1.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 63
-    data_id: 1
-    value: 0.0
-  params:
-  - 12000
-  - 9999
-  - 200
-  - 150
-  - 140
-  - 140
-  - 1
-  - 140
-  drop_items:
+    'code': !!int '63'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
+  'params':
+  - !!int '12000'
+  - !!int '9999'
+  - !!int '200'
+  - !!int '150'
+  - !!int '140'
+  - !!int '140'
+  - !!int '1'
+  - !!int '140'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
 - !ruby/object:RPG::Enemy
-  name: 魔神
-  gold: 50000
-  battler_hue: 0
-  exp: 25000
-  hit: 95
-  battler_name: Evilgod
-  actions:
+  'name': 'Demon God'
+  'gold': !!int '50000'
+  'battler_hue': !!int '0'
+  'exp': !!int '25000'
+  'hit': !!int '95'
+  'battler_name': 'Evilgod'
+  'actions':
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 6
-    skill_id: 1
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '6'
+    'skill_id': !!int '1'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 74
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '74'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 8
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '8'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 9
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '9'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 15
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '15'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 13
-    condition_param2: 0
-    condition_param1: 0
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '13'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
   - !ruby/object:RPG::Enemy::Action
-    condition_type: 0
-    rating: 5
-    skill_id: 12
-    condition_param2: 0
-    condition_param1: 0
-  note: ''
-  id: 30
-  eva: 5
-  features:
+    'condition_type': !!int '0'
+    'rating': !!int '5'
+    'skill_id': !!int '12'
+    'condition_param2': !!int '0'
+    'condition_param1': !!int '0'
+  'note': ''
+  'id': !!int '30'
+  'eva': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.95
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.95'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 31
-    data_id: 1
-    value: 100
+    'code': !!int '31'
+    'data_id': !!int '1'
+    'value': !!int '100'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 10
-    value: 0
+    'code': !!int '11'
+    'data_id': !!int '10'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 1
-    value: 0.0
+    'code': !!int '13'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 5
-    value: 0.0
+    'code': !!int '13'
+    'data_id': !!int '5'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 61
-    data_id: 0
-    value: 1.0
+    'code': !!int '61'
+    'data_id': !!int '0'
+    'value': !!float '1.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 63
-    data_id: 1
-    value: 0.0
-  params:
-  - 20000
-  - 9999
-  - 240
-  - 150
-  - 160
-  - 160
-  - 150
-  - 150
-  drop_items:
+    'code': !!int '63'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
+  'params':
+  - !!int '20000'
+  - !!int '9999'
+  - !!int '240'
+  - !!int '150'
+  - !!int '160'
+  - !!int '160'
+  - !!int '150'
+  - !!int '150'
+  'drop_items':
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    'denominator': !!int '1'
+    'kind': !!int '0'
+    'data_id': !!int '1'

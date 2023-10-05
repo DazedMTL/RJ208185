@@ -1,1590 +1,1601 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Armor
-  description: 通気性の高い布の服。
-  name: 普段着
-  icon_index: 168
-  price: 100
-  note: ''
-  id: 1
-  features:
+  'description': 'Breathable fabric clothing.'
+  'name': 'Casual clothes'
+  'icon_index': !!int '168'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '1'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 1
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '1'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: なめし皮で作られたベスト。
-  name: レザーベスト
-  icon_index: 168
-  price: 300
-  note: ''
-  id: 2
-  features:
+  'description': 'A vest made of tanned leather.'
+  'name': 'Leather Vest'
+  'icon_index': !!int '168'
+  'price': !!int '300'
+  'note': ''
+  'id': !!int '2'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 5
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '5'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 過酷な旅にも耐えられる丈夫な服。
-  name: 冒険者の服
-  icon_index: 168
-  price: 2000
-  note: ''
-  id: 3
-  features:
+  'description': 'Sturdy clothes that can withstand a harsh journey.'
+  'name': 'Adventurer''s clothes'
+  'icon_index': !!int '168'
+  'price': !!int '2000'
+  'note': ''
+  'id': !!int '3'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: にかわで固めた硬皮のベスト。
-  name: ハードレザー
-  icon_index: 168
-  price: 5000
-  note: ''
-  id: 4
-  features:
+  'description': 'A vest made of hardened leather.'
+  'name': 'Hard Leather'
+  'icon_index': !!int '168'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '4'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 15
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '15'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 鋼板で補強したなめし皮製の服。
-  name: ブリガンダイン
-  icon_index: 168
-  price: 8000
-  note: ''
-  id: 5
-  features:
+  'description': 'Reinforced leather clothing made with steel plates.'
+  'name': 'Brigandine'
+  'icon_index': !!int '168'
+  'price': !!int '8000'
+  'note': ''
+  'id': !!int '5'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 20
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '20'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 額を守る布製のハチマキ。
-  name: バンダナ
-  icon_index: 162
-  price: 100
-  note: ''
-  id: 6
-  features:
+  'description': 'A cloth headband to protect the forehead.'
+  'name': 'Bandana'
+  'icon_index': !!int '162'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '6'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 1
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '1'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 額を守る皮製のハチマキ。
-  name: レザーバンダナ
-  icon_index: 162
-  price: 500
-  note: ''
-  id: 7
-  features:
+  'description': 'A leather headband to protect the forehead.'
+  'name': 'Leather Bandana'
+  'icon_index': !!int '162'
+  'price': !!int '500'
+  'note': ''
+  'id': !!int '7'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 3
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '3'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 毛皮で作られた帽子。
-  name: 毛皮の帽子
-  icon_index: 162
-  price: 1500
-  note: ''
-  id: 8
-  features:
+  'description': 'A hat made of fur.'
+  'name': 'Fur Hat'
+  'icon_index': !!int '162'
+  'price': !!int '1500'
+  'note': ''
+  'id': !!int '8'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 6
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '6'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 重ねて巻きつけて頭を守る厚手の布。
-  name: ターバン
-  icon_index: 162
-  price: 4000
-  note: ''
-  id: 9
-  features:
+  'description': 'A thick cloth wrapped around and layered to protect the
+
+    head.'
+  'name': 'Turban'
+  'icon_index': !!int '162'
+  'price': !!int '4000'
+  'note': ''
+  'id': !!int '9'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 極楽鳥の羽がついたオシャレな帽子。
-  name: 羽根付き帽子
-  icon_index: 162
-  price: 6500
-  note: ''
-  id: 10
-  features:
+  'description': 'A stylish hat with feathers of a paradise bird.'
+  'name': 'Feathered Hat'
+  'icon_index': !!int '162'
+  'price': !!int '6500'
+  'note': ''
+  'id': !!int '10'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 14
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '14'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 木綿で作られた厚手のローブ。
-  name: 木綿のローブ
-  icon_index: 171
-  price: 100
-  note: ''
-  id: 11
-  features:
+  'description': 'A thick robe made of cotton.'
+  'name': 'Cotton Robe'
+  'icon_index': !!int '171'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '11'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 4
-  - 2
-  - 2
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '4'
+  - !!int '2'
+  - !!int '2'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 絹で作られた上質なマント。
-  name: 絹のマント
-  icon_index: 171
-  price: 500
-  note: ''
-  id: 12
-  features:
+  'description': 'A high-quality cloak made of silk.'
+  'name': 'Silk Cape'
+  'icon_index': !!int '171'
+  'price': !!int '500'
+  'note': ''
+  'id': !!int '12'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 9
-  - 3
-  - 4
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '9'
+  - !!int '3'
+  - !!int '4'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 裏地にルーン文字が刻まれたローブ。
-  name: 術士のローブ
-  icon_index: 171
-  price: 3000
-  note: ''
-  id: 13
-  features:
+  'description': 'A robe with runic characters engraved on the lining.'
+  'name': 'Sorcerer''s Robe'
+  'icon_index': !!int '171'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '13'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 13
-  - 6
-  - 7
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '13'
+  - !!int '6'
+  - !!int '7'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 古の老賢者が身につけていたローブ。
-  name: ハーミットローブ
-  icon_index: 171
-  price: 8000
-  note: ''
-  id: 14
-  features:
+  'description': 'The robe that the ancient wise man wore.'
+  'name': 'Hermit Robe'
+  'icon_index': !!int '171'
+  'price': !!int '8000'
+  'note': ''
+  'id': !!int '14'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 18
-  - 11
-  - 12
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 2
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '18'
+  - !!int '11'
+  - !!int '12'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 精霊王の力が宿る究極のマント。
-  name: エレメンタルマント
-  icon_index: 171
-  price: 13000
-  note: ''
-  id: 15
-  features:
+  'description': 'The ultimate mantle that houses the power of the Spirit
+
+    King.'
+  'name': 'Elemental Mantle'
+  'icon_index': !!int '171'
+  'price': !!int '13000'
+  'note': ''
+  'id': !!int '15'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.6
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.6'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 0.6
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '0.6'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 0.6
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '0.6'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 0.6
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '0.6'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.6
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.6'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 0.6
-  params:
-  - 0
-  - 0
-  - 0
-  - 25
-  - 17
-  - 18
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 2
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '0.6'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '25'
+  - !!int '17'
+  - !!int '18'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 青銅で作られた髪飾り。
-  name: 銅の髪飾り
-  icon_index: 166
-  price: 100
-  note: ''
-  id: 16
-  features:
+  'description': 'A hair ornament made of bronze.'
+  'name': 'Copper hair ornament'
+  'icon_index': !!int '166'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '16'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 2
-  - 2
-  - 1
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '2'
+  - !!int '2'
+  - !!int '1'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 鉄で作られたリング状の額飾り。
-  name: サークレット
-  icon_index: 166
-  price: 400
-  note: ''
-  id: 17
-  features:
+  'description': 'A ring-shaped ornament made of iron.'
+  'name': 'Circlet'
+  'icon_index': !!int '166'
+  'price': !!int '400'
+  'note': ''
+  'id': !!int '17'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 6
-  - 4
-  - 3
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '6'
+  - !!int '4'
+  - !!int '3'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 身につけた者の魔力を高める髪飾り。
-  name: 銀の髪飾り
-  icon_index: 166
-  price: 2500
-  note: ''
-  id: 18
-  features:
+  'description': 'A hair ornament that enhances the magical power of the
+
+    wearer.'
+  'name': 'Silver hair ornament'
+  'icon_index': !!int '166'
+  'price': !!int '2500'
+  'note': ''
+  'id': !!int '18'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 10
-  - 5
-  - 4
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '5'
+  - !!int '4'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた額飾り。
-  name: ミスリルサークレット
-  icon_index: 166
-  price: 6000
-  note: ''
-  id: 19
-  features:
+  'description': 'A decorative frame made of magical metal mithril.'
+  'name': 'Mithril Circlet'
+  'icon_index': !!int '166'
+  'price': !!int '6000'
+  'note': ''
+  'id': !!int '19'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 15
-  - 7
-  - 6
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '15'
+  - !!int '7'
+  - !!int '6'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: 古代魔法文明の技術で作られた額飾り。
-  name: 賢者の額冠
-  icon_index: 166
-  price: 10000
-  note: ''
-  id: 20
-  features:
+  'description': 'A forehead ornament made with ancient magical civilization
+
+    technology.'
+  'name': 'Sage''s Crown'
+  'icon_index': !!int '166'
+  'price': !!int '10000'
+  'note': ''
+  'id': !!int '20'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 18
-  - 12
-  - 11
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 2
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '18'
+  - !!int '12'
+  - !!int '11'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '2'
 - !ruby/object:RPG::Armor
-  description: "なめし皮を重ねて組んだ鎧。\r\n"
-  name: レザーアーマー
-  icon_index: 169
-  price: 100
-  note: ''
-  id: 21
-  features:
+  'description': 'Armor made by layering tanned leather.'
+  'name': 'Leather Armor'
+  'icon_index': !!int '169'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '21'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 5
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '5'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 青銅で作られた粗末な胸当て。
-  name: ブロンズブレスト
-  icon_index: 169
-  price: 400
-  note: ''
-  id: 22
-  features:
+  'description': 'A crude breastplate made of bronze.'
+  'name': 'Bronze Breastplate'
+  'icon_index': !!int '169'
+  'price': !!int '400'
+  'note': ''
+  'id': !!int '22'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 12
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '12'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 鋼板から打ち出した鉄の胸当て。
-  name: アイアンブレスト
-  icon_index: 169
-  price: 2700
-  note: ''
-  id: 23
-  features:
+  'description': 'Breastplate made of iron forged from steel.'
+  'name': 'Iron Breastplate'
+  'icon_index': !!int '169'
+  'price': !!int '2700'
+  'note': ''
+  'id': !!int '23'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 18
-  - 0
-  - 0
-  - -2
-  - 0
-  etype_id: 3
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '18'
+  - !!int '0'
+  - !!int '0'
+  - !!int '-2'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた胸当て。
-  name: ミスリルブレスト
-  icon_index: 169
-  price: 7000
-  note: ''
-  id: 24
-  features:
+  'description': 'Breastplate made of magical metal mithril.'
+  'name': 'Mithril Breastplate'
+  'icon_index': !!int '169'
+  'price': !!int '7000'
+  'note': ''
+  'id': !!int '24'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 24
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '24'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 竜の鱗から作られた胸当て。
-  name: ドラゴンスケイル
-  icon_index: 169
-  price: 12000
-  note: ''
-  id: 25
-  features:
+  'description': 'Breastplate made from dragon scales.'
+  'name': 'Dragon Scale'
+  'icon_index': !!int '169'
+  'price': !!int '12000'
+  'note': ''
+  'id': !!int '25'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 30
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 3
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '30'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: なめし皮で作られた帽子。
-  name: レザーキャップ
-  icon_index: 163
-  price: 100
-  note: ''
-  id: 26
-  features:
+  'description': 'A hat made of tanned leather.'
+  'name': 'Leather Cap'
+  'icon_index': !!int '163'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '26'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 4
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '4'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 青銅で補強された帽子。
-  name: ブロンズキャップ
-  icon_index: 163
-  price: 350
-  note: ''
-  id: 27
-  features:
+  'description': 'A hat reinforced with bronze.'
+  'name': 'Bronze Cap'
+  'icon_index': !!int '163'
+  'price': !!int '350'
+  'note': ''
+  'id': !!int '27'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 7
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '7'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 鋼板を加工して作った帽子。
-  name: サレット
-  icon_index: 163
-  price: 2400
-  note: ''
-  id: 28
-  features:
+  'description': 'A hat made by processing steel plates.'
+  'name': 'Sallet'
+  'icon_index': !!int '163'
+  'price': !!int '2400'
+  'note': ''
+  'id': !!int '28'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 12
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '12'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: ミスリル銀糸で編まれた帽子。
-  name: ミスリルキャップ
-  icon_index: 163
-  price: 5500
-  note: ''
-  id: 29
-  features:
+  'description': 'A hat woven with mithril silver thread.'
+  'name': 'Mithril Cap'
+  'icon_index': !!int '163'
+  'price': !!int '5500'
+  'note': ''
+  'id': !!int '29'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 16
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 3
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '16'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 竜の皮膚から作られた帽子。
-  name: ドラゴンスキン
-  icon_index: 163
-  price: 9500
-  note: ''
-  id: 30
-  features:
+  'description': 'A hat made from dragon skin.'
+  'name': 'Dragon Skin'
+  'icon_index': !!int '163'
+  'price': !!int '9500'
+  'note': ''
+  'id': !!int '30'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 22
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 3
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '22'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '3'
 - !ruby/object:RPG::Armor
-  description: 鉄の鎖を組み上げて作った鎧。
-  name: チェインメイル
-  icon_index: 170
-  price: 100
-  note: ''
-  id: 31
-  features:
+  'description': 'Armor made by assembling iron chains.'
+  'name': 'Chainmail'
+  'icon_index': !!int '170'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '31'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -1.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 8
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-1.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '8'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 鋼鉄製の鎧。
-  name: アイアンメイル
-  icon_index: 170
-  price: 800
-  note: ''
-  id: 32
-  features:
+  'description': 'Steel armor.'
+  'name': 'Iron Mail'
+  'icon_index': !!int '170'
+  'price': !!int '800'
+  'note': ''
+  'id': !!int '32'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.01
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.01'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 16
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '16'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 騎士が身につける板金鎧。
-  name: プレートメイル
-  icon_index: 170
-  price: 3600
-  note: ''
-  id: 33
-  features:
+  'description': 'Knight wearing a plate armor.'
+  'name': 'Plate Mail'
+  'icon_index': !!int '170'
+  'price': !!int '3600'
+  'note': ''
+  'id': !!int '33'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.02
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.02'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -3.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 24
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-3.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '24'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた鎧。
-  name: ミスリルメイル
-  icon_index: 170
-  price: 8000
-  note: ''
-  id: 34
-  features:
+  'description': 'Armor made of magical metal called Mithril.'
+  'name': 'Mithril Mail'
+  'icon_index': !!int '170'
+  'price': !!int '8000'
+  'note': ''
+  'id': !!int '34'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 32
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 4
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '32'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 竜の鱗から作られた鎧。
-  name: 竜鱗の鎧
-  icon_index: 170
-  price: 15000
-  note: ''
-  id: 35
-  features:
+  'description': 'Armor made from dragon scales.'
+  'name': 'Dragon Scale Armor'
+  'icon_index': !!int '170'
+  'price': !!int '15000'
+  'note': ''
+  'id': !!int '35'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.01
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.01'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 40
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 3
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '40'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '3'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 頭部を覆う鉄鎖で編まれたフード。
-  name: チェインコイフ
-  icon_index: 164
-  price: 100
-  note: ''
-  id: 36
-  features:
+  'description': 'A hood woven with iron chains that cover the head.'
+  'name': 'Chain Coif'
+  'icon_index': !!int '164'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '36'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -1.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 6
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-1.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '6'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 鋼鉄製の兜。
-  name: アイアンヘルム
-  icon_index: 164
-  price: 600
-  note: ''
-  id: 37
-  features:
+  'description': 'Steel helmet.'
+  'name': 'Iron Helm'
+  'icon_index': !!int '164'
+  'price': !!int '600'
+  'note': ''
+  'id': !!int '37'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.005
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.005'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 12
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '12'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 騎士が身につける装飾された兜。
-  name: ナイトヘルム
-  icon_index: 164
-  price: 3000
-  note: ''
-  id: 38
-  features:
+  'description': 'Decorated helmet worn by knights.'
+  'name': 'Knight Helm'
+  'icon_index': !!int '164'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '38'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.01
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.01'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -3.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 18
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-3.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '18'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた兜。
-  name: ミスリルヘルム
-  icon_index: 164
-  price: 7000
-  note: ''
-  id: 39
-  features:
+  'description': 'A helmet made of magical metal mithril.'
+  'name': 'Mithril Helmet'
+  'icon_index': !!int '164'
+  'price': !!int '7000'
+  'note': ''
+  'id': !!int '39'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 24
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 4
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '24'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 竜の鱗から作られた兜。
-  name: 竜鱗の兜
-  icon_index: 164
-  price: 12000
-  note: ''
-  id: 40
-  features:
+  'description': 'A helmet made from dragon scales.'
+  'name': 'Dragon Scale Helmet'
+  'icon_index': !!int '164'
+  'price': !!int '12000'
+  'note': ''
+  'id': !!int '40'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.005
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.005'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 30
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 2
-  atype_id: 4
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '30'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '2'
+  'atype_id': !!int '4'
 - !ruby/object:RPG::Armor
-  description: 攻撃を受け流すための小型盾。
-  name: バックラー
-  icon_index: 160
-  price: 100
-  note: ''
-  id: 41
-  features:
+  'description': 'Small shield designed to deflect attacks.'
+  'name': 'Buckler'
+  'icon_index': !!int '160'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '41'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.02
-  params:
-  - 0
-  - 0
-  - 0
-  - 1
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 5
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.02'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '1'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '5'
 - !ruby/object:RPG::Armor
-  description: 鉄の枠で補強した木製の円盾。
-  name: ラウンドシールド
-  icon_index: 160
-  price: 300
-  note: ''
-  id: 42
-  features:
+  'description': 'A wooden round shield reinforced with an iron frame.'
+  'name': 'Round Shield'
+  'icon_index': !!int '160'
+  'price': !!int '300'
+  'note': ''
+  'id': !!int '42'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.04
-  params:
-  - 0
-  - 0
-  - 0
-  - 3
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 5
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.04'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '3'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '5'
 - !ruby/object:RPG::Armor
-  description: 表面に攻撃用のトゲがついた円盾。
-  name: スパイクシールド
-  icon_index: 160
-  price: 1800
-  note: ''
-  id: 43
-  features:
+  'description': 'A round shield with spikes for attacking on the surface.'
+  'name': 'Spike Shield'
+  'icon_index': !!int '160'
+  'price': !!int '1800'
+  'note': ''
+  'id': !!int '43'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.06
-  params:
-  - 0
-  - 0
-  - 3
-  - 6
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 5
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.06'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '3'
+  - !!int '6'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '5'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた小型盾。
-  name: ミスリルバックラー
-  icon_index: 160
-  price: 4500
-  note: ''
-  id: 44
-  features:
+  'description': 'A small shield made of magical metal mithril.'
+  'name': 'Mithril Buckler'
+  'icon_index': !!int '160'
+  'price': !!int '4500'
+  'note': ''
+  'id': !!int '44'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.08
-  params:
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 5
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.08'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '5'
 - !ruby/object:RPG::Armor
-  description: 竜の鱗から作られた小型盾。
-  name: ドラゴンバックラー
-  icon_index: 160
-  price: 7000
-  note: ''
-  id: 45
-  features:
+  'description': 'A small shield made from dragon scales.'
+  'name': 'Dragon Backler'
+  'icon_index': !!int '160'
+  'price': !!int '7000'
+  'note': ''
+  'id': !!int '45'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.125
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.125'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 15
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 5
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '15'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '5'
 - !ruby/object:RPG::Armor
-  description: 堅木を重ね合わせて作った盾。
-  name: ウッドシールド
-  icon_index: 161
-  price: 100
-  note: ''
-  id: 46
-  features:
+  'description': 'A shield made by layering solid wood.'
+  'name': 'Wood Shield'
+  'icon_index': !!int '161'
+  'price': !!int '100'
+  'note': ''
+  'id': !!int '46'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: -0.2
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '-0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -1.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 2
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 6
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-1.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '2'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '6'
 - !ruby/object:RPG::Armor
-  description: 鋼鉄製の盾。
-  name: アイアンシールド
-  icon_index: 161
-  price: 700
-  note: ''
-  id: 47
-  features:
+  'description': 'Steel shield.'
+  'name': 'Iron Shield'
+  'icon_index': !!int '161'
+  'price': !!int '700'
+  'note': ''
+  'id': !!int '47'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: -0.2
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '-0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 6
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 6
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '6'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '6'
 - !ruby/object:RPG::Armor
-  description: グリフォンの紋章が刻まれた鋼の盾。
-  name: ナイトシールド
-  icon_index: 161
-  price: 3400
-  note: ''
-  id: 48
-  features:
+  'description': 'A steel shield engraved with the emblem of a griffin.'
+  'name': 'Knight Shield'
+  'icon_index': !!int '161'
+  'price': !!int '3400'
+  'note': ''
+  'id': !!int '48'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: -0.2
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '-0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -3.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 12
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 6
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-3.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '12'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '6'
 - !ruby/object:RPG::Armor
-  description: 魔法の金属ミスリルで作られた盾。
-  name: ミスリルシールド
-  icon_index: 161
-  price: 7500
-  note: ''
-  id: 49
-  features:
+  'description': 'A shield made of magical metal mithril.'
+  'name': 'Mithril Shield'
+  'icon_index': !!int '161'
+  'price': !!int '7500'
+  'note': ''
+  'id': !!int '49'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: -0.2
-  params:
-  - 0
-  - 0
-  - 0
-  - 18
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 6
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '-0.2'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '18'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '6'
 - !ruby/object:RPG::Armor
-  description: 竜の鱗を組み合わせて作った盾。
-  name: 竜鱗の盾
-  icon_index: 161
-  price: 13500
-  note: ''
-  id: 50
-  features:
+  'description': 'A shield made by combining dragon scales.'
+  'name': 'Dragon Scale Shield'
+  'icon_index': !!int '161'
+  'price': !!int '13500'
+  'note': ''
+  'id': !!int '50'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 3
-    value: -0.2
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value': !!float '-0.2'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 33
-    data_id: 0
-    value: -2.0
-  params:
-  - 0
-  - 0
-  - 0
-  - 24
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 1
-  atype_id: 6
+    'code': !!int '33'
+    'data_id': !!int '0'
+    'value': !!float '-2.0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '24'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '1'
+  'atype_id': !!int '6'
 - !ruby/object:RPG::Armor
-  description: "闘神の名が刻まれた金属のベルト。\r\n"
-  name: 闘神のベルト
-  icon_index: 179
-  price: 3000
-  note: ''
-  id: 51
-  features:
+  'description': 'A metal belt engraved with the name of the God of War.'
+  'name': 'Belt of the War God'
+  'icon_index': !!int '179'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '51'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 10
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "守りの魔法がかけられたピアス。\r\n"
-  name: 守りのピアス
-  icon_index: 179
-  price: 3000
-  note: ''
-  id: 52
-  features:
+  'description': 'A protective magic has been cast on the earrings.'
+  'name': 'Earring of Protection'
+  'icon_index': !!int '179'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '52'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  - 10
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "風の精霊の力が宿るブーツ。\r\n"
-  name: ウィングブーツ
-  icon_index: 179
-  price: 3000
-  note: ''
-  id: 53
-  features:
+  'description': 'Boots imbued with the power of the wind spirit.'
+  'name': 'Wing Boots'
+  'icon_index': !!int '179'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '53'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.1
-  params:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.1'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "大地の精霊の力が宿るお守り。\r\n"
-  name: 大地のアミュレット
-  icon_index: 179
-  price: 3000
-  note: ''
-  id: 54
-  features:
+  'description': 'The amulet that holds the power of the earth spirit.'
+  'name': 'Amulet of the Earth'
+  'icon_index': !!int '179'
+  'price': !!int '3000'
+  'note': ''
+  'id': !!int '54'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 2
-    value: 0.8
+    'code': !!int '13'
+    'data_id': !!int '2'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 3
-    value: 0.8
+    'code': !!int '13'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 4
-    value: 0.8
+    'code': !!int '13'
+    'data_id': !!int '4'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 5
-    value: 0.8
+    'code': !!int '13'
+    'data_id': !!int '5'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 6
-    value: 0.8
+    'code': !!int '13'
+    'data_id': !!int '6'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 13
-    data_id: 7
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 5
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '13'
+    'data_id': !!int '7'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '5'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "幸運の女神の名が刻まれたお守り。\r\n"
-  name: 幸運のお守り
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 55
-  features:
+  'description': 'A charm engraved with the name of the goddess of luck.'
+  'name': 'Lucky Charm'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '55'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
-  params:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 30
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '30'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "神に仕える者がもつ聖なるシンボル。\r\n"
-  name: ホーリーシンボル
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 56
-  features:
+  'description': 'The sacred symbol possessed by those who serve God.'
+  'name': 'Holy Symbol'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '56'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 3
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '3'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 4
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '4'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 5
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '5'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 6
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '6'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 7
-    value: 0.8
+    'code': !!int '11'
+    'data_id': !!int '7'
+    'value': !!float '0.8'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 11
-    data_id: 8
-    value: 0.8
-  params:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 5
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '11'
+    'data_id': !!int '8'
+    'value': !!float '0.8'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '5'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "魔神の力を秘めた指輪。\r\n"
-  name: ソロモンの指輪
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 57
-  features:
+  'description': 'A ring imbued with the power of a demon.'
+  'name': 'Solomon''s Ring'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '57'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!int '0'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 23
-    data_id: 4
-    value: 0.5
-  params:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 10
-  - 0
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '23'
+    'data_id': !!int '4'
+    'value': !!float '0.5'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '10'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "持つ者に戦う力を与える魔法の首飾り。\r\n"
-  name: 戦乙女の首飾り
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 58
-  features:
+  'description': 'A magical necklace that grants the power to fight to its
+
+    wearer.'
+  'name': 'Valkyrie''s Necklace'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '58'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.1
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.1'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.1'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 9
-    value: 0.04
-  params:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '9'
+    'value': !!float '0.04'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: "狂戦士の力が得られるアイパッチ。\r\n"
-  name: 狂戦士の眼帯
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 59
-  features:
+  'description': 'You can obtain the power of the berserker with this
+
+    eyepatch.'
+  'name': 'Berserker''s Eyepatch'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '59'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: -0.05
-  params:
-  - 0
-  - 0
-  - 15
-  - -5
-  - 0
-  - 0
-  - 0
-  - 0
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '-0.05'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '15'
+  - !!int '-5'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'
 - !ruby/object:RPG::Armor
-  description: 神々の王の力が宿るお守り。
-  name: 光のタリスマン
-  icon_index: 179
-  price: 5000
-  note: ''
-  id: 60
-  features:
+  'description': 'The amulet that holds the power of the gods'' king.'
+  'name': 'Talisman of Light'
+  'icon_index': !!int '179'
+  'price': !!int '5000'
+  'note': ''
+  'id': !!int '60'
+  'features':
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 0
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '0'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 1
-    value: 0.05
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value': !!float '0.05'
   - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 7
-    value: 0.04
-  params:
-  - 0
-  - 0
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  etype_id: 4
-  atype_id: 1
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value': !!float '0.04'
+  'params':
+  - !!int '0'
+  - !!int '0'
+  - !!int '5'
+  - !!int '5'
+  - !!int '5'
+  - !!int '5'
+  - !!int '5'
+  - !!int '5'
+  'etype_id': !!int '4'
+  'atype_id': !!int '1'

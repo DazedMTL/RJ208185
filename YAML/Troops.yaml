@@ -1,962 +1,961 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 196
-    enemy_id: 1
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '196'
+    'enemy_id': !!int '1'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 348
-    enemy_id: 1
-  name: スライム*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '348'
+    'enemy_id': !!int '1'
+  'name': 'スライム*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 1
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '1'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 207
-    enemy_id: 2
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '207'
+    'enemy_id': !!int '2'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 337
-    enemy_id: 2
-  name: こうもり*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '337'
+    'enemy_id': !!int '2'
+  'name': 'こうもり*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 2
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '2'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 227
-    enemy_id: 3
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '227'
+    'enemy_id': !!int '3'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 317
-    enemy_id: 3
-  name: ホーネット*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '317'
+    'enemy_id': !!int '3'
+  'name': 'ホーネット*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 3
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '3'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 112
-    enemy_id: 4
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '112'
+    'enemy_id': !!int '4'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 4
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '4'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 432
-    enemy_id: 4
-  name: 大グモ*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '432'
+    'enemy_id': !!int '4'
+  'name': '大グモ*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 4
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '4'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 154
-    enemy_id: 5
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '154'
+    'enemy_id': !!int '5'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 5
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '5'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 390
-    enemy_id: 5
-  name: 大ネズミ*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '390'
+    'enemy_id': !!int '5'
+  'name': '大ネズミ*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 5
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '5'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 110
-    enemy_id: 6
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '110'
+    'enemy_id': !!int '6'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 6
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '6'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 434
-    enemy_id: 6
-  name: ウィスプ*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '434'
+    'enemy_id': !!int '6'
+  'name': 'ウィスプ*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 6
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '6'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 170
-    enemy_id: 7
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '170'
+    'enemy_id': !!int '7'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 374
-    enemy_id: 7
-  name: 大蛇*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '374'
+    'enemy_id': !!int '7'
+  'name': '大蛇*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 7
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '7'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 105
-    enemy_id: 8
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '105'
+    'enemy_id': !!int '8'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 8
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '8'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 439
-    enemy_id: 8
-  name: 大サソリ*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '439'
+    'enemy_id': !!int '8'
+  'name': '大サソリ*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 8
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '8'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 183
-    enemy_id: 9
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '183'
+    'enemy_id': !!int '9'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 361
-    enemy_id: 9
-  name: 大クラゲ*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '361'
+    'enemy_id': !!int '9'
+  'name': '大クラゲ*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 9
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '9'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 101
-    enemy_id: 10
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '101'
+    'enemy_id': !!int '10'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 10
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '10'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 443
-    enemy_id: 10
-  name: 食人花*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '443'
+    'enemy_id': !!int '10'
+  'name': '食人花*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 10
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '10'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 146
-    enemy_id: 11
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '146'
+    'enemy_id': !!int '11'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 11
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '11'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 398
-    enemy_id: 11
-  name: ゴースト*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '398'
+    'enemy_id': !!int '11'
+  'name': 'ゴースト*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 11
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '11'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 181
-    enemy_id: 12
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '181'
+    'enemy_id': !!int '12'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 363
-    enemy_id: 12
-  name: スケルトン*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '363'
+    'enemy_id': !!int '12'
+  'name': 'スケルトン*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 12
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '12'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 136
-    enemy_id: 13
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '136'
+    'enemy_id': !!int '13'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 13
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '13'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 408
-    enemy_id: 13
-  name: オーク*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '408'
+    'enemy_id': !!int '13'
+  'name': 'オーク*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 13
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '13'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 201
-    enemy_id: 14
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '201'
+    'enemy_id': !!int '14'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 343
-    enemy_id: 14
-  name: インプ*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '343'
+    'enemy_id': !!int '14'
+  'name': 'インプ*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 14
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '14'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 112
-    enemy_id: 15
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '112'
+    'enemy_id': !!int '15'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 15
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '15'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 432
-    enemy_id: 15
-  name: ゲイザー*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '432'
+    'enemy_id': !!int '15'
+  'name': 'ゲイザー*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 15
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '15'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 223
-    enemy_id: 16
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '223'
+    'enemy_id': !!int '16'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 321
-    enemy_id: 16
-  name: パペット*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '321'
+    'enemy_id': !!int '16'
+  'name': 'パペット*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 16
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '16'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 160
-    enemy_id: 17
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '160'
+    'enemy_id': !!int '17'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 17
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '17'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 384
-    enemy_id: 17
-  name: ゾンビ*3
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '384'
+    'enemy_id': !!int '17'
+  'name': 'ゾンビ*3'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 17
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '17'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 171
-    enemy_id: 18
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '171'
+    'enemy_id': !!int '18'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 373
-    enemy_id: 18
-  name: コカトリス*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '373'
+    'enemy_id': !!int '18'
+  'name': 'コカトリス*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 18
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '18'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 19
-  name: キマイラ
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '19'
+  'name': 'キマイラ'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 19
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '19'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 20
-  name: ミミック
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '20'
+  'name': 'ミミック'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 20
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '20'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 183
-    enemy_id: 21
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '183'
+    'enemy_id': !!int '21'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 361
-    enemy_id: 21
-  name: ウェアウルフ*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '361'
+    'enemy_id': !!int '21'
+  'name': 'ウェアウルフ*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 21
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '21'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 149
-    enemy_id: 22
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '149'
+    'enemy_id': !!int '22'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 395
-    enemy_id: 22
-  name: サハギン*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '395'
+    'enemy_id': !!int '22'
+  'name': 'サハギン*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 22
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '22'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 23
-  name: オーガ
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '23'
+  'name': 'オーガ'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 23
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '23'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 156
-    enemy_id: 24
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '156'
+    'enemy_id': !!int '24'
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 388
-    enemy_id: 24
-  name: ガーゴイル*2
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '388'
+    'enemy_id': !!int '24'
+  'name': 'ガーゴイル*2'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 24
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '24'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 25
-  name: ラミア
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '25'
+  'name': 'ラミア'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 25
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '25'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 26
-  name: ヴァンパイア
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '26'
+  'name': 'ヴァンパイア'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 26
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '26'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 27
-  name: サキュバス
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '27'
+  'name': 'サキュバス'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 27
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '27'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 28
-  name: デーモン
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '28'
+  'name': 'デーモン'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 28
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '28'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 29
-  name: 魔王
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '29'
+  'name': '魔王'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 29
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '29'
 - !ruby/object:RPG::Troop
-  members:
+  'members':
   - !ruby/object:RPG::Troop::Member
-    y: 288
-    hidden: false
-    x: 272
-    enemy_id: 30
-  name: 魔神
-  pages:
+    'y': !!int '288'
+    'hidden': !!bool 'false'
+    'x': !!int '272'
+    'enemy_id': !!int '30'
+  'name': '魔神'
+  'pages':
   - !ruby/object:RPG::Troop::Page
-    list:
-    - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-    span: 0
-    condition: !ruby/object:RPG::Troop::Page::Condition
-      turn_valid: false
-      actor_hp: 50
-      turn_a: 0
-      turn_ending: false
-      enemy_hp: 50
-      switch_valid: false
-      enemy_index: 0
-      actor_valid: false
-      actor_id: 1
-      enemy_valid: false
-      switch_id: 1
-      turn_b: 0
-  id: 30
+    'list':
+    - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+    'span': !!int '0'
+    'condition': !ruby/object:RPG::Troop::Page::Condition
+      'turn_valid': !!bool 'false'
+      'actor_hp': !!int '50'
+      'turn_a': !!int '0'
+      'turn_ending': !!bool 'false'
+      'enemy_hp': !!int '50'
+      'switch_valid': !!bool 'false'
+      'enemy_index': !!int '0'
+      'actor_valid': !!bool 'false'
+      'actor_id': !!int '1'
+      'enemy_valid': !!bool 'false'
+      'switch_id': !!int '1'
+      'turn_b': !!int '0'
+  'id': !!int '30'

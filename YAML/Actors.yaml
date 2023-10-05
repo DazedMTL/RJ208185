@@ -1,211 +1,224 @@
----
-- 
+- !!null 'null'
 - !ruby/object:RPG::Actor
-  name: ゆう
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: 主人公その他
-  id: 1
-  features: []
-  note: ''
-  equips:
-  - 1
-  - 46
-  - 0
-  - 1
-  - 0
-  nickname: 銀の死神
-  description: "数々の戦場を渡り歩き、生き延びてきた歴戦の傭兵。普段は\r\n温厚だが、ひとたび戦いが始まれば狂戦士と化す。"
-  max_level: 99
+  'name': 'Yuu'
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '主人公その他'
+  'id': !!int '1'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '1'
+  - !!int '46'
+  - !!int '0'
+  - !!int '1'
+  - !!int '0'
+  'nickname': 'Silver Reaper'
+  'description': "数々の戦場を渡り歩き、生き延びてきた歴戦の傭兵。普段は\r\n温厚だが、ひとたび戦いが始まれば狂戦士と化す。"
+  'max_level': !!int '99'
+  'profile': 'A seasoned mercenary who has crossed numerous battlefields
+
+    and survived. While usually mild-mannered, once the battle
+
+    begins, they transform into a berserker.'
 - !ruby/object:RPG::Actor
-  name: ライル
-  face_index: 0
-  character_index: 5
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: 主人公その他
-  id: 2
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Lyle'
+  'face_index': !!int '0'
+  'character_index': !!int '5'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '主人公その他'
+  'id': !!int '2'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: エミル
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: $おっとり姉
-  id: 3
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Emiru'
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '$おっとり姉'
+  'id': !!int '3'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: リサ
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: $勝ち気
-  id: 4
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Risa'
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '$勝ち気'
+  'id': !!int '4'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: マリア
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: $母
-  id: 5
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Maria'
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '$母'
+  'id': !!int '5'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: ハルカ
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: $教師普段着
-  id: 6
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Haruka'
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '$教師普段着'
+  'id': !!int '6'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: レット
-  face_index: 0
-  character_index: 4
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: 主人公その他
-  id: 7
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Lett'
+  'face_index': !!int '0'
+  'character_index': !!int '4'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '主人公その他'
+  'id': !!int '7'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: ごんぞう
-  face_index: 0
-  character_index: 1
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: 主人公その他
-  id: 8
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': 'Gonzo'
+  'face_index': !!int '0'
+  'character_index': !!int '1'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': '主人公その他'
+  'id': !!int '8'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: ''
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: ''
-  id: 9
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': ''
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': ''
+  'id': !!int '9'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''
 - !ruby/object:RPG::Actor
-  name: ''
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: ''
-  class_id: 1
-  character_name: ''
-  id: 10
-  features: []
-  note: ''
-  equips:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  nickname: ''
-  description: ''
-  max_level: 99
-  icon_index: 0
+  'name': ''
+  'face_index': !!int '0'
+  'character_index': !!int '0'
+  'initial_level': !!int '1'
+  'face_name': ''
+  'class_id': !!int '1'
+  'character_name': ''
+  'id': !!int '10'
+  'features': []
+  'note': ''
+  'equips':
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  - !!int '0'
+  'nickname': ''
+  'description': ''
+  'max_level': !!int '99'
+  'icon_index': !!int '0'
+  'profile': ''

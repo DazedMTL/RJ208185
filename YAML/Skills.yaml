@@ -1,4156 +1,4227 @@
----
-- 
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体にダメージを与える。
-  name: 攻撃
-  occasion: 1
-  icon_index: 116
-  message1: の攻撃！
-  scope: 1
-  animation_id: -1
-  note: スキル１番は［攻撃］コマンドを選択したときに使用されます。
-  mp_cost: 0
-  speed: 0
-  id: 1
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: true
-  success_rate: 100
-  hit_type: 1
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 5
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 身を守ることに専念し、受けるダメージを抑える。
-  name: 防御
-  occasion: 1
-  icon_index: 116
-  message1: は身を守っている。
-  scope: 11
-  animation_id: 0
-  note: スキル２番は［防御］コマンドを選択したときに使用されます。
-  mp_cost: 0
-  speed: 2000
-  id: 2
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 9
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 4
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に対して２回攻撃を行う。
-  name: 連続攻撃
-  occasion: 1
-  icon_index: 116
-  message1: の攻撃！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 3
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: true
-  success_rate: 100
-  hit_type: 1
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 2
-  tp_gain: 3
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵２体にダメージを与える。
-  name: ２回攻撃
-  occasion: 1
-  icon_index: 116
-  message1: の攻撃！
-  scope: 4
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 4
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: true
-  success_rate: 100
-  hit_type: 1
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 3
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵３体にダメージを与える。
-  name: ３回攻撃
-  occasion: 1
-  icon_index: 116
-  message1: の攻撃！
-  scope: 5
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 5
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: true
-  success_rate: 100
-  hit_type: 1
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 2
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵キャラの行動用。使用者が戦闘から離脱する。
-  name: 逃げる
-  occasion: 1
-  icon_index: 116
-  message1: は逃げてしまった。
-  scope: 11
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 6
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 41
-    data_id: 0
-    value1: 0.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 何もしない。
-  name: 様子を見る
-  occasion: 1
-  icon_index: 116
-  message1: は様子を見ている。
-  scope: 0
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 7
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 0
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 4
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に炎属性のダメージを与える。
-  name: 炎の息
-  occasion: 1
-  icon_index: 96
-  message1: は炎の息を吐いた！
-  scope: 2
-  animation_id: 25
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 8
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 3
-    formula: a.atk
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に冷気属性のダメージを与える。
-  name: 吹雪の息
-  occasion: 1
-  icon_index: 97
-  message1: は吹雪の息を吐いた！
-  scope: 2
-  animation_id: 26
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 9
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 4
-    formula: a.atk
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に雷属性のダメージを与える。
-  name: 電撃
-  occasion: 1
-  icon_index: 98
-  message1: は電撃を放った！
-  scope: 2
-  animation_id: 27
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 10
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 5
-    formula: a.atk
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を毒状態にする。
-  name: 猛毒の霧
-  occasion: 1
-  icon_index: 2
-  message1: は猛毒の霧を放った！
-  scope: 2
-  animation_id: 31
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 11
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 2
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を暗闇状態にする。
-  name: 眩しい光
-  occasion: 1
-  icon_index: 3
-  message1: は眩しい光を放った！
-  scope: 2
-  animation_id: 51
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 12
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 3
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を沈黙状態にする。
-  name: 妖しい霧
-  occasion: 1
-  icon_index: 4
-  message1: は妖しい霧を放った！
-  scope: 2
-  animation_id: 31
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 13
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 4
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を混乱状態にする。
-  name: 超音波
-  occasion: 1
-  icon_index: 5
-  message1: は超音波を放った！
-  scope: 2
-  animation_id: 30
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 14
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 5
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を混乱状態にする。
-  name: 誘惑の歌
-  occasion: 1
-  icon_index: 5
-  message1: は誘惑の歌を歌った！
-  scope: 2
-  animation_id: 32
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 15
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 5
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を睡眠状態にする。
-  name: 甘い息
-  occasion: 1
-  icon_index: 6
-  message1: は甘い息を吐いた！
-  scope: 2
-  animation_id: 54
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 16
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 6
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を睡眠状態にする。
-  name: 眠りの花粉
-  occasion: 1
-  icon_index: 6
-  message1: は眠りの花粉を放った！
-  scope: 2
-  animation_id: 29
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 17
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 6
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を麻痺状態にする。
-  name: 痺れる息
-  occasion: 1
-  icon_index: 7
-  message1: は痺れる息を吐いた！
-  scope: 2
-  animation_id: 28
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 18
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 7
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体を麻痺状態にする。
-  name: 麻痺にらみ
-  occasion: 1
-  icon_index: 7
-  message1: は鋭い目でにらみつけた！
-  scope: 1
-  animation_id: 55
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 19
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 7
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体のバランスを崩させる。
-  name: 足払い
-  occasion: 1
-  icon_index: 8
-  message1: は足払いを仕掛けた！
-  scope: 1
-  animation_id: 35
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 20
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 8
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体にダメージを与え、バランスを崩させる。
-  name: 体当たり
-  occasion: 1
-  icon_index: 8
-  message1: は体当たりをした！
-  scope: 1
-  animation_id: 36
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 21
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 8
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 80
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体のバランスを崩させる。
-  name: 雄たけび
-  occasion: 1
-  icon_index: 8
-  message1: は雄たけびを上げた！
-  scope: 2
-  animation_id: 34
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 22
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 8
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体のＨＰを吸収する。
-  name: 吸血
-  occasion: 1
-  icon_index: 120
-  message1: の吸血攻撃！
-  scope: 1
-  animation_id: 49
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 23
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 5
-    element_id: 2
-    formula: a.atk * 2 - b.def
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 使用者のＨＰを回復する。
-  name: 瞑想
-  occasion: 1
-  icon_index: 112
-  message1: は瞑想を始めた。
-  scope: 11
-  animation_id: 39
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 24
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: b.mhp / 4
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ''
-  name: '--------------------'
-  occasion: 0
-  icon_index: 0
-  message1: ''
-  scope: 1
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 25
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体のＨＰを回復する。
-  name: ヒール
-  occasion: 0
-  icon_index: 112
-  message1: はヒールを唱えた！
-  scope: 7
-  animation_id: 37
-  note: ''
-  mp_cost: 4
-  speed: 0
-  id: 26
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: 250 + a.mat
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体のＨＰを回復する。
-  name: ヒールⅡ
-  occasion: 0
-  icon_index: 112
-  message1: はヒールⅡを唱えた！
-  scope: 7
-  animation_id: 37
-  note: ''
-  mp_cost: 8
-  speed: 0
-  id: 27
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: 1000 + a.mat * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体のＨＰを回復する。
-  name: ヒールⅢ
-  occasion: 0
-  icon_index: 112
-  message1: はヒールⅢを唱えた！
-  scope: 7
-  animation_id: 37
-  note: ''
-  mp_cost: 16
-  speed: 0
-  id: 28
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: 4000 + a.mat * 4
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方全体のＨＰを回復する。
-  name: リカバー
-  occasion: 0
-  icon_index: 112
-  message1: はリカバーを唱えた！
-  scope: 8
-  animation_id: 37
-  note: ''
-  mp_cost: 12
-  speed: 0
-  id: 29
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: 250 + a.mat
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方全体のＨＰを回復する。
-  name: リカバーⅡ
-  occasion: 0
-  icon_index: 112
-  message1: はリカバーⅡを唱えた！
-  scope: 8
-  animation_id: 37
-  note: ''
-  mp_cost: 24
-  speed: 0
-  id: 30
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: 1000 + a.mat * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 毒状態および麻痺状態を治療する。
-  name: キュア
-  occasion: 0
-  icon_index: 112
-  message1: はキュアを唱えた！
-  scope: 7
-  animation_id: 40
-  note: ''
-  mp_cost: 3
-  speed: 0
-  id: 31
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 7
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 戦闘不能以外の状態異常を治療する。
-  name: キュアⅡ
-  occasion: 0
-  icon_index: 112
-  message1: はキュアⅡを唱えた！
-  scope: 7
-  animation_id: 41
-  note: ''
-  mp_cost: 8
-  speed: 0
-  id: 32
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 3
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 4
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 5
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 6
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 7
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 戦闘不能から復活させる。
-  name: レイズ
-  occasion: 0
-  icon_index: 112
-  message1: はレイズを唱えた！
-  scope: 9
-  animation_id: 42
-  note: ''
-  mp_cost: 15
-  speed: 0
-  id: 33
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 1
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: b.mhp / 10
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 戦闘不能から復活させ、ＨＰを大きく回復する。
-  name: レイズⅡ
-  occasion: 0
-  icon_index: 112
-  message1: はレイズⅡを唱えた！
-  scope: 9
-  animation_id: 42
-  note: ''
-  mp_cost: 35
-  speed: 0
-  id: 34
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 1
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 3
-    element_id: 0
-    formula: b.mhp / 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を毒状態にする。
-  name: ポイズン
-  occasion: 1
-  icon_index: 2
-  message1: はポイズンを唱えた！
-  scope: 2
-  animation_id: 50
-  note: ''
-  mp_cost: 2
-  speed: 0
-  id: 35
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 2
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を暗闇状態にする。
-  name: ブラインド
-  occasion: 1
-  icon_index: 3
-  message1: はブラインドを唱えた！
-  scope: 2
-  animation_id: 51
-  note: ''
-  mp_cost: 3
-  speed: 0
-  id: 36
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 3
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を沈黙状態にする。
-  name: サイレンス
-  occasion: 1
-  icon_index: 4
-  message1: はサイレンスを唱えた！
-  scope: 2
-  animation_id: 52
-  note: ''
-  mp_cost: 4
-  speed: 0
-  id: 37
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 4
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を混乱状態にする。
-  name: コンフューズ
-  occasion: 1
-  icon_index: 5
-  message1: はコンフューズを唱えた！
-  scope: 2
-  animation_id: 53
-  note: ''
-  mp_cost: 5
-  speed: 0
-  id: 38
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 5
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を睡眠状態にする。
-  name: スリープ
-  occasion: 1
-  icon_index: 6
-  message1: はスリープを唱えた！
-  scope: 2
-  animation_id: 54
-  note: ''
-  mp_cost: 6
-  speed: 0
-  id: 39
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 6
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体を麻痺状態にする。
-  name: パラライズ
-  occasion: 1
-  icon_index: 7
-  message1: はパラライズを唱えた！
-  scope: 1
-  animation_id: 55
-  note: ''
-  mp_cost: 7
-  speed: 0
-  id: 40
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 7
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体の攻撃力を上げる。
-  name: ウェポンブレス
-  occasion: 1
-  icon_index: 34
-  message1: はウェポンブレスを唱えた！
-  scope: 7
-  animation_id: 43
-  note: ''
-  mp_cost: 9
-  speed: 0
-  id: 41
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体の防御力を上げる。
-  name: アーマーブレス
-  occasion: 1
-  icon_index: 35
-  message1: はアーマーブレスを唱えた！
-  scope: 7
-  animation_id: 43
-  note: ''
-  mp_cost: 8
-  speed: 0
-  id: 42
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体の魔法防御を上げる。
-  name: ディバインブレス
-  occasion: 1
-  icon_index: 37
-  message1: はディバインブレスを唱えた！
-  scope: 7
-  animation_id: 43
-  note: ''
-  mp_cost: 7
-  speed: 0
-  id: 43
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 5
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 味方単体の敏捷性を上げる。
-  name: クイックムーブ
-  occasion: 1
-  icon_index: 38
-  message1: はクイックムーブを唱えた！
-  scope: 7
-  animation_id: 43
-  note: ''
-  mp_cost: 6
-  speed: 0
-  id: 44
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 6
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体の攻撃力を下げる。
-  name: ウェポンカース
-  occasion: 1
-  icon_index: 50
-  message1: はウェポンカースを唱えた！
-  scope: 2
-  animation_id: 45
-  note: ''
-  mp_cost: 9
-  speed: 0
-  id: 45
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体の防御力を下げる。
-  name: アーマーカース
-  occasion: 1
-  icon_index: 51
-  message1: はアーマーカースを唱えた！
-  scope: 2
-  animation_id: 45
-  note: ''
-  mp_cost: 8
-  speed: 0
-  id: 46
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 3
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体の魔法防御を下げる。
-  name: ディバインカース
-  occasion: 1
-  icon_index: 53
-  message1: はディバインカースを唱えた！
-  scope: 2
-  animation_id: 45
-  note: ''
-  mp_cost: 7
-  speed: 0
-  id: 47
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 5
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体の敏捷性を下げる。
-  name: スロームーブ
-  occasion: 1
-  icon_index: 54
-  message1: はスロームーブを唱えた！
-  scope: 2
-  animation_id: 45
-  note: ''
-  mp_cost: 6
-  speed: 0
-  id: 48
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 6
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体のＨＰを吸収する。
-  name: ライフドレイン
-  occasion: 1
-  icon_index: 120
-  message1: はライフドレインを唱えた！
-  scope: 1
-  animation_id: 49
-  note: ''
-  mp_cost: 10
-  speed: 0
-  id: 49
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 5
-    element_id: 2
-    formula: 200 + a.mat * 4 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体のＭＰを吸収する。
-  name: マナドレイン
-  occasion: 1
-  icon_index: 120
-  message1: はマナドレインを唱えた！
-  scope: 1
-  animation_id: 49
-  note: ''
-  mp_cost: 10
-  speed: 0
-  id: 50
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 6
-    element_id: 2
-    formula: 20 + a.mat - b.mdf * 0.5
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に炎属性のダメージを与える。
-  name: ファイア
-  occasion: 1
-  icon_index: 96
-  message1: はファイアを唱えた！
-  scope: 1
-  animation_id: 57
-  note: ''
-  mp_cost: 4
-  speed: 0
-  id: 51
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 3
-    formula: 150 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に炎属性のダメージを与える。
-  name: ファイアⅡ
-  occasion: 1
-  icon_index: 96
-  message1: はファイアⅡを唱えた！
-  scope: 1
-  animation_id: 58
-  note: ''
-  mp_cost: 12
-  speed: -5
-  id: 52
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 3
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に炎属性のダメージを与える。
-  name: フレイム
-  occasion: 1
-  icon_index: 96
-  message1: はフレイムを唱えた！
-  scope: 2
-  animation_id: 59
-  note: ''
-  mp_cost: 8
-  speed: -10
-  id: 53
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 3
-    formula: 150 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に炎属性のダメージを与える。
-  name: フレイムⅡ
-  occasion: 1
-  icon_index: 96
-  message1: はフレイムⅡを唱えた！
-  scope: 2
-  animation_id: 60
-  note: ''
-  mp_cost: 24
-  speed: -20
-  id: 54
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 3
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に氷属性のダメージを与える。
-  name: アイス
-  occasion: 1
-  icon_index: 97
-  message1: はアイスを唱えた！
-  scope: 1
-  animation_id: 61
-  note: ''
-  mp_cost: 4
-  speed: 0
-  id: 55
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 4
-    formula: 150 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に氷属性のダメージを与える。
-  name: アイスⅡ
-  occasion: 1
-  icon_index: 97
-  message1: はアイスⅡを唱えた！
-  scope: 1
-  animation_id: 62
-  note: ''
-  mp_cost: 12
-  speed: -5
-  id: 56
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 4
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に氷属性のダメージを与える。
-  name: ブリザード
-  occasion: 1
-  icon_index: 97
-  message1: はブリザードを唱えた！
-  scope: 2
-  animation_id: 63
-  note: ''
-  mp_cost: 8
-  speed: -10
-  id: 57
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 4
-    formula: 150 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に氷属性のダメージを与える。
-  name: ブリザードⅡ
-  occasion: 1
-  icon_index: 97
-  message1: はブリザードⅡを唱えた！
-  scope: 2
-  animation_id: 64
-  note: ''
-  mp_cost: 24
-  speed: -20
-  id: 58
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 4
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に雷属性のダメージを与える。
-  name: サンダー
-  occasion: 1
-  icon_index: 98
-  message1: はサンダーを唱えた！
-  scope: 1
-  animation_id: 65
-  note: ''
-  mp_cost: 5
-  speed: 0
-  id: 59
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 5
-    formula: 200 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に雷属性のダメージを与える。
-  name: サンダーⅡ
-  occasion: 1
-  icon_index: 98
-  message1: はサンダーⅡを唱えた！
-  scope: 1
-  animation_id: 66
-  note: ''
-  mp_cost: 15
-  speed: -5
-  id: 60
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 5
-    formula: 500 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に雷属性のダメージを与える。
-  name: スパーク
-  occasion: 1
-  icon_index: 98
-  message1: はスパークを唱えた！
-  scope: 2
-  animation_id: 67
-  note: ''
-  mp_cost: 10
-  speed: -10
-  id: 61
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 5
-    formula: 200 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に雷属性のダメージを与える。
-  name: スパークⅡ
-  occasion: 1
-  icon_index: 98
-  message1: はスパークⅡを唱えた！
-  scope: 2
-  animation_id: 68
-  note: ''
-  mp_cost: 30
-  speed: -20
-  id: 62
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 5
-    formula: 500 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に水属性のダメージを与える。
-  name: ウォーター
-  occasion: 1
-  icon_index: 99
-  message1: はウォーターを唱えた！
-  scope: 1
-  animation_id: 69
-  note: ''
-  mp_cost: 6
-  speed: -5
-  id: 63
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 6
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に水属性のダメージを与える。
-  name: ウェーブ
-  occasion: 1
-  icon_index: 99
-  message1: はウェーブを唱えた！
-  scope: 2
-  animation_id: 70
-  note: ''
-  mp_cost: 18
-  speed: -15
-  id: 64
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 6
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に大地属性のダメージを与える。
-  name: ストーン
-  occasion: 1
-  icon_index: 100
-  message1: はストーンを唱えた！
-  scope: 1
-  animation_id: 71
-  note: ''
-  mp_cost: 6
-  speed: -5
-  id: 65
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 7
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に大地属性のダメージを与える。
-  name: クェイク
-  occasion: 1
-  icon_index: 100
-  message1: はクェイクを唱えた！
-  scope: 2
-  animation_id: 72
-  note: ''
-  mp_cost: 18
-  speed: -15
-  id: 66
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 7
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に風属性のダメージを与える。
-  name: ウィンド
-  occasion: 1
-  icon_index: 101
-  message1: はウィンドを唱えた！
-  scope: 1
-  animation_id: 73
-  note: ''
-  mp_cost: 6
-  speed: -5
-  id: 67
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 8
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に風属性のダメージを与える。
-  name: トルネード
-  occasion: 1
-  icon_index: 101
-  message1: はトルネードを唱えた！
-  scope: 2
-  animation_id: 74
-  note: ''
-  mp_cost: 18
-  speed: -15
-  id: 68
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 8
-    formula: 300 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に神聖属性のダメージを与える。
-  name: セイント
-  occasion: 1
-  icon_index: 102
-  message1: はセイントを唱えた！
-  scope: 1
-  animation_id: 75
-  note: ''
-  mp_cost: 10
-  speed: -10
-  id: 69
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 9
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に神聖属性のダメージを与える。
-  name: スターライト
-  occasion: 1
-  icon_index: 102
-  message1: はスターライトを唱えた！
-  scope: 2
-  animation_id: 76
-  note: ''
-  mp_cost: 40
-  speed: -30
-  id: 70
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 9
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に暗黒属性のダメージを与える。
-  name: シェイド
-  occasion: 1
-  icon_index: 103
-  message1: はシェイドを唱えた！
-  scope: 1
-  animation_id: 77
-  note: ''
-  mp_cost: 10
-  speed: -10
-  id: 71
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 10
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に暗黒属性のダメージを与える。
-  name: ダークネス
-  occasion: 1
-  icon_index: 103
-  message1: はダークネスを唱えた！
-  scope: 2
-  animation_id: 78
-  note: ''
-  mp_cost: 40
-  speed: -30
-  id: 72
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 10
-    formula: 400 + a.mat * 2 - b.mdf * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に防御無視のダメージを与える。
-  name: バースト
-  occasion: 1
-  icon_index: 119
-  message1: はバーストを唱えた！
-  scope: 1
-  animation_id: 79
-  note: ''
-  mp_cost: 15
-  speed: -20
-  id: 73
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 0
-    formula: 300 + a.mat * 2
-    variance: 40
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に防御無視のダメージを与える。
-  name: ニュークリア
-  occasion: 1
-  icon_index: 119
-  message1: はニュークリアを唱えた！
-  scope: 2
-  animation_id: 80
-  note: ''
-  mp_cost: 60
-  speed: -40
-  id: 74
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 0
-    formula: 300 + a.mat * 2
-    variance: 40
-    critical: false
-  success_rate: 100
-  hit_type: 2
-  stype_id: 2
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ''
-  name: '--------------------'
-  occasion: 0
-  icon_index: 0
-  message1: ''
-  scope: 1
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 75
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者に炎属性を付与する。
-  name: ファイアウェポン
-  occasion: 1
-  icon_index: 96
-  message1: はファイアウェポンを唱えた！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 25
-  speed: 0
-  id: 76
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 21
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者に氷属性を付与する。
-  name: アイスウェポン
-  occasion: 1
-  icon_index: 97
-  message1: はアイスウェポンを唱えた！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 25
-  speed: 0
-  id: 77
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 22
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者に雷属性を付与する。
-  name: サンダーウェポン
-  occasion: 1
-  icon_index: 98
-  message1: はサンダーウェポンを唱えた！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 25
-  speed: 0
-  id: 78
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 23
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ''
-  name: '--------------------'
-  occasion: 0
-  icon_index: 0
-  message1: ''
-  scope: 1
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 79
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 0
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に対して強力な攻撃を行う。
-  name: 強撃
-  occasion: 1
-  icon_index: 116
-  message1: は強撃を放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 80
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 5 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に対して攻撃を行う。
-  name: 薙ぎ払い
-  occasion: 1
-  icon_index: 116
-  message1: は薙ぎ払った！
-  scope: 2
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 81
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 0
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 2 - b.def * 2
-    variance: 25
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、味方全体の攻撃力を少し上げる。
-  name: 狂戦士の咆哮
-  occasion: 1
-  icon_index: 34
-  message1: は狂戦士の咆哮を使った！
-  scope: 8
-  animation_id: 34
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 82
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 斧技。敵３体に対して強力な攻撃を行う。
-  name: バーサーカーダンス
-  occasion: 1
-  icon_index: 128
-  message1: はバーサーカーダンスを放った！
-  scope: 5
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 83
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 5 - b.def * 2
-    variance: 30
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 1
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 斧技。敵全体に対して強力な攻撃を行う。
-  name: ギガスランページ
-  occasion: 1
-  icon_index: 128
-  message1: はギガスランページを放った！
-  scope: 2
-  animation_id: 12
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 84
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 12 - b.def * 6
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 1
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "敵単体に対して攻撃を行ない、バランスを崩させる。\r\nダメージは使用者の攻撃力と防御力に依存する。"
-  name: タックル
-  occasion: 1
-  icon_index: 116
-  message1: はタックルを放った！
-  scope: 1
-  animation_id: 36
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 85
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 8
-    value1: 0.3
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 1
-    formula: a.atk * 4 + a.def * 2 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 使用者の状態異常をすべて治す。
-  name: チャクラ
-  occasion: 1
-  icon_index: 112
-  message1: はチャクラを使った！
-  scope: 11
-  animation_id: 38
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 86
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 2
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 3
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 4
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 5
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 6
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 22
-    data_id: 7
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ３ターンの間、敵の攻撃をキャンセルして反撃を行う。
-  name: 虎伏の構え
-  occasion: 1
-  icon_index: 11
-  message1: は虎伏の構えを使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 87
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 18
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "敵全体に対して、防御力無視の強力な攻撃を行う。\r\n通常よりも素早く行動できる。"
-  name: 無影脚
-  occasion: 1
-  icon_index: 116
-  message1: は無影脚を放った！
-  scope: 2
-  animation_id: 5
-  note: ''
-  mp_cost: 0
-  speed: 100
-  id: 88
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 0
-    formula: a.atk * 5
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 爪技。敵単体に対して、防御力無視の強力な２回攻撃を行う。
-  name: 破龍爪円舞
-  occasion: 1
-  icon_index: 129
-  message1: は破龍爪円舞を放った！
-  scope: 1
-  animation_id: 86
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 89
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 12
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 2
-  required_wtype_id2: 0
-  repeats: 2
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: １ターンの間、ＨＰの少ない味方を自動的にかばう。
-  name: かばう
-  occasion: 1
-  icon_index: 116
-  message1: は仲間をかばっている。
-  scope: 11
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 2000
-  id: 90
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 11
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の狙われやすさを上げる。
-  name: 挑発
-  occasion: 1
-  icon_index: 9
-  message1: は敵の注意を引きつけた！
-  scope: 11
-  animation_id: 34
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 91
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 12
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ３ターンの間、使用者への物理攻撃をほぼ完全に防ぐ。
-  name: 鉄壁の守り
-  occasion: 1
-  icon_index: 113
-  message1: は鉄壁の守りを使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 92
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 17
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、味方全体の防御力を大幅に上げる。
-  name: リッターシルト
-  occasion: 1
-  icon_index: 43
-  message1: はリッターシルトを使った！
-  scope: 8
-  animation_id: 33
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 93
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 5.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 槍技。敵３体に対して強力な２回攻撃を行う。
-  name: ゼクスシュツルム
-  occasion: 1
-  icon_index: 130
-  message1: はゼクスシュツルムを放った！
-  scope: 5
-  animation_id: 90
-  note: ''
-  mp_cost: 0
-  speed: 1000
-  id: 94
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 5 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 3
-  required_wtype_id2: 0
-  repeats: 2
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "剣技。敵単体に対して強力な攻撃を行ない、沈黙させる。\r\nダメージは使用者の攻撃力と魔法力に依存する。"
-  name: オーラブレード
-  occasion: 1
-  icon_index: 131
-  message1: はオーラブレードを放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 95
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 4
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 + a.mat * 3 - b.def - b.mdf
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 4
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体の強化魔法を解除する。
-  name: ディスペル
-  occasion: 1
-  icon_index: 114
-  message1: はディスペルを使った！
-  scope: 1
-  animation_id: 46
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 96
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 2
-    value1: 0.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 3
-    value1: 0.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 4
-    value1: 0.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 5
-    value1: 0.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 6
-    value1: 0.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 33
-    data_id: 7
-    value1: 0.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ３ターンの間、使用者の魔法防御を大幅に上げる。
-  name: 魔法バリア
-  occasion: 1
-  icon_index: 45
-  message1: は魔法バリアを使った！
-  scope: 11
-  animation_id: 44
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 97
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 5
-    value1: 3.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 5
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者に炎・氷・雷の属性を付与する。
-  name: リインフォーサー
-  occasion: 1
-  icon_index: 113
-  message1: はリインフォーサーを使った！
-  scope: 11
-  animation_id: 44
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 98
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 21
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 22
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 23
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "剣技。敵全体に対して強力な神聖属性の攻撃を行う。\r\nダメージは使用者の攻撃力と魔法力に依存する。"
-  name: レディアントブレード
-  occasion: 1
-  icon_index: 131
-  message1: はレディアントブレードを放った！
-  scope: 2
-  animation_id: 87
-  note: ''
-  mp_cost: 0
-  speed: 1000
-  id: 99
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 9
-    formula: a.atk * 5 + a.mat * 5 - b.def - b.mdf
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 4
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に防御力無視の攻撃を行なう。
-  name: 鎧通し
-  occasion: 1
-  icon_index: 116
-  message1: は鎧通しを放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 100
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 使用者のＴＰを少し増やす。
-  name: 心頭滅却
-  occasion: 1
-  icon_index: 112
-  message1: は心頭滅却を使った！
-  scope: 11
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 101
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 13
-    data_id: 0
-    value1: 30.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の攻撃力と防御力を少し上げる。
-  name: 八相
-  occasion: 1
-  icon_index: 113
-  message1: は八相を使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 102
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 2
-    value1: 5.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 刀技。敵全体に対して２回攻撃を行う。
-  name: ツバメ返し
-  occasion: 1
-  icon_index: 132
-  message1: はツバメ返しを放った！
-  scope: 2
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 103
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 3 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 5
-  required_wtype_id2: 0
-  repeats: 2
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 刀技。敵全体に対して４回攻撃を行う。
-  name: 桜花夢幻刃
-  occasion: 1
-  icon_index: 132
-  message1: は桜花夢幻刃を放った！
-  scope: 2
-  animation_id: 88
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 104
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 5
-  required_wtype_id2: 0
-  repeats: 4
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に必中攻撃を行い、攻撃力を少し下げる。
-  name: ウェポンブレイク
-  occasion: 1
-  icon_index: 116
-  message1: はウェポンブレイクを放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 105
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 2
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵単体に必中攻撃を行い、防御力を少し下げる。
-  name: アーマーブレイク
-  occasion: 1
-  icon_index: 116
-  message1: はアーマーブレイクを放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 106
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 3
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の敏捷性を大幅に上げる。
-  name: 絶影
-  occasion: 1
-  icon_index: 46
-  message1: は絶影を使った！
-  scope: 11
-  animation_id: 31
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 107
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 6
-    value1: 5.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 6
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "弓技。敵３体に対して強力な攻撃を行う。\r\nダメージは使用者の攻撃力と敏捷性に依存する。"
-  name: トリプルショット
-  occasion: 1
-  icon_index: 133
-  message1: はトリプルショットを放った！
-  scope: 5
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 108
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 4 + a.agi * 2 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 6
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "弓技。敵全体に対して３回攻撃を行う。\r\nダメージは使用者の攻撃力と敏捷性に依存する。"
-  name: サウザンドアロー
-  occasion: 1
-  icon_index: 133
-  message1: はサウザンドアローを放った！
-  scope: 2
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 109
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 3 + a.agi * 2 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 6
-  required_wtype_id2: 0
-  repeats: 3
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の狙われやすさを下げる。
-  name: 隠れる
-  occasion: 1
-  icon_index: 12
-  message1: は気配を消した！
-  scope: 11
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 110
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 13
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を暗闇状態にする。
-  name: 閃光玉
-  occasion: 1
-  icon_index: 3
-  message1: は閃光玉を使った！
-  scope: 2
-  animation_id: 33
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 111
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 3
-    value1: 0.5
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ８ターンの間、使用者の運を大幅に上げる。
-  name: 盗賊の悪運
-  occasion: 1
-  icon_index: 47
-  message1: は盗賊の悪運を使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 112
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 7
-    value1: 8.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 7
-    value1: 8.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "短剣技。敵単体に対して強力な２回攻撃を行う。\r\nダメージは使用者の攻撃力と運に依存する。"
-  name: アサシンエッジ
-  occasion: 1
-  icon_index: 134
-  message1: はアサシンエッジを放った！
-  scope: 1
-  animation_id: -1
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 113
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 3 + a.luk * 4 - b.def * 2
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 7
-  required_wtype_id2: 0
-  repeats: 2
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: "短剣技。敵４体に対して強力な攻撃を行う。\r\nダメージは使用者の攻撃力と運に依存する。"
-  name: ヴァリアントエッジ
-  occasion: 1
-  icon_index: 134
-  message1: はヴァリアントエッジを放った！
-  scope: 6
-  animation_id: 89
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 114
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: -1
-    formula: a.atk * 2 + a.luk * 4 - b.def * 2
-    variance: 50
-    critical: false
-  success_rate: 100
-  hit_type: 1
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 7
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ３ターンの間、味方全体の防御力を少し上げる。
-  name: 聖霊の祝福
-  occasion: 1
-  icon_index: 35
-  message1: は聖霊の祝福を使った！
-  scope: 8
-  animation_id: 44
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 115
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 3.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ４ターンの間、味方全体をＨＰ自動回復状態にする。
-  name: 妖精の息吹
-  occasion: 1
-  icon_index: 10
-  message1: は妖精の息吹を使った！
-  scope: 8
-  animation_id: 42
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 116
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 14
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体に対して、魔法力依存の神聖属性攻撃を行う。
-  name: 神罰
-  occasion: 1
-  icon_index: 102
-  message1: は神罰を放った！
-  scope: 2
-  animation_id: 76
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 117
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 1
-    element_id: 9
-    formula: a.mat * 5 - b.mdf
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ７ターンの間、味方全体の防御力と魔法防御を大幅に上げる。
-  name: 女神の加護
-  occasion: 1
-  icon_index: 113
-  message1: は女神の加護を使った！
-  scope: 8
-  animation_id: 44
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 118
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 7.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 3
-    value1: 7.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 5
-    value1: 7.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 5
-    value1: 7.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: １ターンの間、敵の魔法攻撃を跳ね返す。
-  name: 魔法反射
-  occasion: 1
-  icon_index: 15
-  message1: は敵の魔法攻撃に備えている。
-  scope: 11
-  animation_id: 0
-  note: ''
-  mp_cost: 0
-  speed: 2000
-  id: 119
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 20
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の魔法力を大幅に上げる。
-  name: スペルエンハンス
-  occasion: 1
-  icon_index: 44
-  message1: はスペルエンハンスを使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 120
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 4
-    value1: 5.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 31
-    data_id: 4
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 敵全体を睡眠状態にし、魔法防御を大幅に下げる。
-  name: ナイトメア
-  occasion: 1
-  icon_index: 6
-  message1: はナイトメアを放った！
-  scope: 2
-  animation_id: 56
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 121
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 6
-    value1: 1.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 5
-    value1: 5.0
-    value2: 0.0
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 32
-    data_id: 5
-    value1: 5.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: 使用者のＭＰを最大値の50％回復する。
-  name: 魔力の奔流
-  occasion: 1
-  icon_index: 14
-  message1: は魔力の奔流を使った！
-  scope: 11
-  animation_id: 38
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 122
-  features: []
-  effects: []
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 4
-    element_id: 0
-    formula: b.mmp * 0.5
-    variance: 0
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ４ターンの間、使用者をＭＰ自動回復状態にする。
-  name: 魔脈のオーラ
-  occasion: 1
-  icon_index: 10
-  message1: は魔脈のオーラを使った！
-  scope: 11
-  animation_id: 38
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 123
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 15
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 10
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ３ターンの間、使用者への魔法攻撃を打ち消す。
-  name: 絶対魔法防御
-  occasion: 1
-  icon_index: 13
-  message1: は絶対魔法防御を使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 124
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 19
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 25
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、味方全体の状態異常を防止する。
-  name: マナの光輝
-  occasion: 1
-  icon_index: 113
-  message1: はマナの光輝を使った！
-  scope: 8
-  animation_id: 44
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 125
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 24
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 50
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
-- !ruby/object:RPG::Skill
-  message2: ''
-  description: ５ターンの間、使用者の消費ＭＰを大幅に減らす。
-  name: 魔道の秘儀
-  occasion: 1
-  icon_index: 14
-  message1: は魔道の秘儀を使った！
-  scope: 11
-  animation_id: 43
-  note: ''
-  mp_cost: 0
-  speed: 0
-  id: 126
-  features: []
-  effects:
-  - !ruby/object:RPG::UsableItem::Effect
-    code: 21
-    data_id: 25
-    value1: 1.0
-    value2: 0.0
-  damage: !ruby/object:RPG::UsableItem::Damage
-    type: 0
-    element_id: 0
-    formula: '0'
-    variance: 20
-    critical: false
-  success_rate: 100
-  hit_type: 0
-  stype_id: 1
-  tp_cost: 100
-  required_wtype_id1: 0
-  required_wtype_id2: 0
-  repeats: 1
-  tp_gain: 0
+- !!null 'null'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to a single enemy.'
+  'name': 'Attack'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': '''s attack!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': 'スキル１番は［攻撃］コマンドを選択したときに使用されます。'
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '1'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'true'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '5'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Focus on self-defense and minimize the damage received.'
+  'name': 'Defense'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' is protecting themselves.'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': 'スキル２番は［防御］コマンドを選択したときに使用されます。'
+  'mp_cost': !!int '0'
+  'speed': !!int '2000'
+  'id': !!int '2'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '9'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '4'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs two attacks against a single enemy.'
+  'name': 'Continuous Attack'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': '''s attack!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '3'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'true'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '2'
+  'tp_gain': !!int '3'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to two enemies.'
+  'name': 'Double Attack'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': '''s attack!'
+  'scope': !!int '4'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '4'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'true'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '3'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to three enemies.'
+  'name': '3-hit attack'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': '''s attack!'
+  'scope': !!int '5'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '5'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'true'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '2'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Used for enemy character actions. The user withdraws from
+
+    battle.'
+  'name': 'Escape'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' ran away.'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '6'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '41'
+    'data_id': !!int '0'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Do nothing.'
+  'name': 'Watch the situation'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' is observing the situation.'
+  'scope': !!int '0'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '7'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '0'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '4'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals fire attribute damage to all enemies.'
+  'name': 'Flame Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' breathed out a flame!'
+  'scope': !!int '2'
+  'animation_id': !!int '25'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '8'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '3'
+    'formula': 'a.atk'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals ice damage to all enemies.'
+  'name': 'Blizzard Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' exhaled a breath of snowstorm!'
+  'scope': !!int '2'
+  'animation_id': !!int '26'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '9'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '4'
+    'formula': 'a.atk'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals thunder attribute damage to all enemies.'
+  'name': 'Electric Shock'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' released an electric shock!'
+  'scope': !!int '2'
+  'animation_id': !!int '27'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '10'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '5'
+    'formula': 'a.atk'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflict poison status on all enemies.'
+  'name': 'Poison Mist'
+  'occasion': !!int '1'
+  'icon_index': !!int '2'
+  'message1': ' released a deadly poison mist!'
+  'scope': !!int '2'
+  'animation_id': !!int '31'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '11'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '2'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts darkness status on all enemies.'
+  'name': 'Dazzling Light'
+  'occasion': !!int '1'
+  'icon_index': !!int '3'
+  'message1': ' emitted a dazzling light!'
+  'scope': !!int '2'
+  'animation_id': !!int '51'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '12'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '3'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Silence all enemies.'
+  'name': 'Mysterious Mist'
+  'occasion': !!int '1'
+  'icon_index': !!int '4'
+  'message1': ' released a mysterious mist!'
+  'scope': !!int '2'
+  'animation_id': !!int '31'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '13'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '4'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts confusion status on all enemies.'
+  'name': 'Ultrasonic Wave'
+  'occasion': !!int '1'
+  'icon_index': !!int '5'
+  'message1': ' emitted ultrasonic waves!'
+  'scope': !!int '2'
+  'animation_id': !!int '30'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '14'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '5'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts confusion status on all enemies.'
+  'name': 'Song of Temptation'
+  'occasion': !!int '1'
+  'icon_index': !!int '5'
+  'message1': ' sang a tempting song!'
+  'scope': !!int '2'
+  'animation_id': !!int '32'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '15'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '5'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Puts all enemies to sleep.'
+  'name': 'Sweet Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '6'
+  'message1': ' exhaled a sweet breath!'
+  'scope': !!int '2'
+  'animation_id': !!int '54'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '16'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '6'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Puts all enemies to sleep.'
+  'name': 'Sleep Pollen'
+  'occasion': !!int '1'
+  'icon_index': !!int '6'
+  'message1': ' released the pollen of sleep!'
+  'scope': !!int '2'
+  'animation_id': !!int '29'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '17'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '6'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Paralyzes all enemies.'
+  'name': 'Numbing Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '7'
+  'message1': ' let out a breath of excitement!'
+  'scope': !!int '2'
+  'animation_id': !!int '28'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '18'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '7'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts paralysis status on a single enemy.'
+  'name': 'Paralysis Stare'
+  'occasion': !!int '1'
+  'icon_index': !!int '7'
+  'message1': ' stared sharply with their eyes!'
+  'scope': !!int '1'
+  'animation_id': !!int '55'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '19'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '7'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Disrupt the balance of a single enemy.'
+  'name': 'Leg Sweep'
+  'occasion': !!int '1'
+  'icon_index': !!int '8'
+  'message1': ' initiated a leg sweep!'
+  'scope': !!int '1'
+  'animation_id': !!int '35'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '20'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '8'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to a single enemy and disrupts their balance.'
+  'name': 'Tackle'
+  'occasion': !!int '1'
+  'icon_index': !!int '8'
+  'message1': ' performed a body slam!'
+  'scope': !!int '1'
+  'animation_id': !!int '36'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '21'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '8'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '80'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Disrupt the balance of the entire enemy team.'
+  'name': 'Roar'
+  'occasion': !!int '1'
+  'icon_index': !!int '8'
+  'message1': ' shouted a battle cry!'
+  'scope': !!int '2'
+  'animation_id': !!int '34'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '22'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '8'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Absorbs the HP of a single enemy.'
+  'name': 'Bloodsuck'
+  'occasion': !!int '1'
+  'icon_index': !!int '120'
+  'message1': '''s vampire attack!'
+  'scope': !!int '1'
+  'animation_id': !!int '49'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '23'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '5'
+    'element_id': !!int '2'
+    'formula': 'a.atk * 2 - b.def'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the user''s HP.'
+  'name': 'Meditation'
+  'occasion': !!int '1'
+  'icon_index': !!int '112'
+  'message1': ' began meditating.'
+  'scope': !!int '11'
+  'animation_id': !!int '39'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '24'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': 'b.mhp / 4'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': ''
+  'name': '--------------------'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'message1': ''
+  'scope': !!int '1'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '25'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the HP of a single ally.'
+  'name': 'Heal'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' cast a heal spell!'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'mp_cost': !!int '4'
+  'speed': !!int '0'
+  'id': !!int '26'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': '250 + a.mat'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the HP of a single ally.'
+  'name': 'Heal II'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' casted Heal II!'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '0'
+  'id': !!int '27'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': '1000 + a.mat * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the HP of a single ally.'
+  'name': 'Heal III'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' casted Heal III!'
+  'scope': !!int '7'
+  'animation_id': !!int '37'
+  'note': ''
+  'mp_cost': !!int '16'
+  'speed': !!int '0'
+  'id': !!int '28'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': '4000 + a.mat * 4'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the HP of all allies.'
+  'name': 'Recover'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' casted a recovery spell!'
+  'scope': !!int '8'
+  'animation_id': !!int '37'
+  'note': ''
+  'mp_cost': !!int '12'
+  'speed': !!int '0'
+  'id': !!int '29'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': '250 + a.mat'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the HP of all allies.'
+  'name': 'Recover II'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' casted Recover II!'
+  'scope': !!int '8'
+  'animation_id': !!int '37'
+  'note': ''
+  'mp_cost': !!int '24'
+  'speed': !!int '0'
+  'id': !!int '30'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': '1000 + a.mat * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Treats poison and paralysis status.'
+  'name': 'Cure'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' cast a spell!'
+  'scope': !!int '7'
+  'animation_id': !!int '40'
+  'note': ''
+  'mp_cost': !!int '3'
+  'speed': !!int '0'
+  'id': !!int '31'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Treat any status abnormalities except for incapacitation.'
+  'name': 'Cure II'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' cast Cure II!'
+  'scope': !!int '7'
+  'animation_id': !!int '41'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '0'
+  'id': !!int '32'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '4'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '5'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '6'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Revive from incapacitation.'
+  'name': 'Raise'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' cast a spell!'
+  'scope': !!int '9'
+  'animation_id': !!int '42'
+  'note': ''
+  'mp_cost': !!int '15'
+  'speed': !!int '0'
+  'id': !!int '33'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': 'b.mhp / 10'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Revives from incapacitation and greatly restores HP.'
+  'name': 'Raise II'
+  'occasion': !!int '0'
+  'icon_index': !!int '112'
+  'message1': ' cast Raise II!'
+  'scope': !!int '9'
+  'animation_id': !!int '42'
+  'note': ''
+  'mp_cost': !!int '35'
+  'speed': !!int '0'
+  'id': !!int '34'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '1'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '3'
+    'element_id': !!int '0'
+    'formula': 'b.mhp / 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflict poison status on all enemies.'
+  'name': 'Poison'
+  'occasion': !!int '1'
+  'icon_index': !!int '2'
+  'message1': ' cast a spell!'
+  'scope': !!int '2'
+  'animation_id': !!int '50'
+  'note': ''
+  'mp_cost': !!int '2'
+  'speed': !!int '0'
+  'id': !!int '35'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '2'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts darkness status on all enemies.'
+  'name': 'Blind'
+  'occasion': !!int '1'
+  'icon_index': !!int '3'
+  'message1': ' cast a blind spell!'
+  'scope': !!int '2'
+  'animation_id': !!int '51'
+  'note': ''
+  'mp_cost': !!int '3'
+  'speed': !!int '0'
+  'id': !!int '36'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '3'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Silence all enemies.'
+  'name': 'Silence'
+  'occasion': !!int '1'
+  'icon_index': !!int '4'
+  'message1': ' cast Silence!'
+  'scope': !!int '2'
+  'animation_id': !!int '52'
+  'note': ''
+  'mp_cost': !!int '4'
+  'speed': !!int '0'
+  'id': !!int '37'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '4'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts confusion status on all enemies.'
+  'name': 'Confuse'
+  'occasion': !!int '1'
+  'icon_index': !!int '5'
+  'message1': ' cast confusion!'
+  'scope': !!int '2'
+  'animation_id': !!int '53'
+  'note': ''
+  'mp_cost': !!int '5'
+  'speed': !!int '0'
+  'id': !!int '38'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '5'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Puts all enemies to sleep.'
+  'name': 'Sleep'
+  'occasion': !!int '1'
+  'icon_index': !!int '6'
+  'message1': ' cast Sleep!'
+  'scope': !!int '2'
+  'animation_id': !!int '54'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '0'
+  'id': !!int '39'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '6'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts paralysis status on a single enemy.'
+  'name': 'Paralyze'
+  'occasion': !!int '1'
+  'icon_index': !!int '7'
+  'message1': ' cast Paralyze!'
+  'scope': !!int '1'
+  'animation_id': !!int '55'
+  'note': ''
+  'mp_cost': !!int '7'
+  'speed': !!int '0'
+  'id': !!int '40'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '7'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the attack power of a single ally.'
+  'name': 'Weapon Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '34'
+  'message1': ' cast Weapon Bless!'
+  'scope': !!int '7'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '9'
+  'speed': !!int '0'
+  'id': !!int '41'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the defense power of a single ally.'
+  'name': 'Armor Bless'
+  'occasion': !!int '1'
+  'icon_index': !!int '35'
+  'message1': ' casted Armor Bless!'
+  'scope': !!int '7'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '0'
+  'id': !!int '42'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the magic defense of a single ally.'
+  'name': 'Divine Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '37'
+  'message1': ' cast Divine Breath!'
+  'scope': !!int '7'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '7'
+  'speed': !!int '0'
+  'id': !!int '43'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '5'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the agility of a single ally.'
+  'name': 'Quick Move'
+  'occasion': !!int '1'
+  'icon_index': !!int '38'
+  'message1': ' cast Quick Move!'
+  'scope': !!int '7'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '0'
+  'id': !!int '44'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '6'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Decreases the attack power of all enemies.'
+  'name': 'Weapon Curse'
+  'occasion': !!int '1'
+  'icon_index': !!int '50'
+  'message1': ' cast a weapon curse!'
+  'scope': !!int '2'
+  'animation_id': !!int '45'
+  'note': ''
+  'mp_cost': !!int '9'
+  'speed': !!int '0'
+  'id': !!int '45'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Decreases the defense of all enemies.'
+  'name': 'Armor Curse'
+  'occasion': !!int '1'
+  'icon_index': !!int '51'
+  'message1': ' cast Armor Curse!'
+  'scope': !!int '2'
+  'animation_id': !!int '45'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '0'
+  'id': !!int '46'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Decreases the magic defense of all enemies.'
+  'name': 'Divine Curse'
+  'occasion': !!int '1'
+  'icon_index': !!int '53'
+  'message1': ' cast Divine Curse!'
+  'scope': !!int '2'
+  'animation_id': !!int '45'
+  'note': ''
+  'mp_cost': !!int '7'
+  'speed': !!int '0'
+  'id': !!int '47'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '5'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Decreases the agility of all enemies.'
+  'name': 'Slow Move'
+  'occasion': !!int '1'
+  'icon_index': !!int '54'
+  'message1': ' cast a slow move!'
+  'scope': !!int '2'
+  'animation_id': !!int '45'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '0'
+  'id': !!int '48'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '6'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Absorbs the HP of a single enemy.'
+  'name': 'Life Drain'
+  'occasion': !!int '1'
+  'icon_index': !!int '120'
+  'message1': ' cast Life Drain!'
+  'scope': !!int '1'
+  'animation_id': !!int '49'
+  'note': ''
+  'mp_cost': !!int '10'
+  'speed': !!int '0'
+  'id': !!int '49'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '5'
+    'element_id': !!int '2'
+    'formula': '200 + a.mat * 4 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Absorbs the MP of a single enemy.'
+  'name': 'Mana Drain'
+  'occasion': !!int '1'
+  'icon_index': !!int '120'
+  'message1': ' cast Mana Drain!'
+  'scope': !!int '1'
+  'animation_id': !!int '49'
+  'note': ''
+  'mp_cost': !!int '10'
+  'speed': !!int '0'
+  'id': !!int '50'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '6'
+    'element_id': !!int '2'
+    'formula': '20 + a.mat - b.mdf * 0.5'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals fire attribute damage to a single enemy.'
+  'name': 'Fire'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' cast a fire spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '57'
+  'note': ''
+  'mp_cost': !!int '4'
+  'speed': !!int '0'
+  'id': !!int '51'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '3'
+    'formula': '150 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals fire attribute damage to a single enemy.'
+  'name': 'Fire II'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' cast Fire II!'
+  'scope': !!int '1'
+  'animation_id': !!int '58'
+  'note': ''
+  'mp_cost': !!int '12'
+  'speed': !!int '-5'
+  'id': !!int '52'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '3'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals fire attribute damage to all enemies.'
+  'name': 'Flame'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' cast a flame!'
+  'scope': !!int '2'
+  'animation_id': !!int '59'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '-10'
+  'id': !!int '53'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '3'
+    'formula': '150 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals fire attribute damage to all enemies.'
+  'name': 'Flame II'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' cast Flame II!'
+  'scope': !!int '2'
+  'animation_id': !!int '60'
+  'note': ''
+  'mp_cost': !!int '24'
+  'speed': !!int '-20'
+  'id': !!int '54'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '3'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals ice attribute damage to a single enemy.'
+  'name': 'Ice'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' chanted an ice spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '61'
+  'note': ''
+  'mp_cost': !!int '4'
+  'speed': !!int '0'
+  'id': !!int '55'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '4'
+    'formula': '150 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals ice attribute damage to a single enemy.'
+  'name': 'Ice II'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' cast Ice II!'
+  'scope': !!int '1'
+  'animation_id': !!int '62'
+  'note': ''
+  'mp_cost': !!int '12'
+  'speed': !!int '-5'
+  'id': !!int '56'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '4'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals ice attribute damage to all enemies.'
+  'name': 'Blizzard'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' cast Blizzard!'
+  'scope': !!int '2'
+  'animation_id': !!int '63'
+  'note': ''
+  'mp_cost': !!int '8'
+  'speed': !!int '-10'
+  'id': !!int '57'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '4'
+    'formula': '150 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals ice attribute damage to all enemies.'
+  'name': 'Blizzard II'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' cast Blizzard II!'
+  'scope': !!int '2'
+  'animation_id': !!int '64'
+  'note': ''
+  'mp_cost': !!int '24'
+  'speed': !!int '-20'
+  'id': !!int '58'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '4'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals lightning attribute damage to a single enemy.'
+  'name': 'Thunder'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' cast Thunder!'
+  'scope': !!int '1'
+  'animation_id': !!int '65'
+  'note': ''
+  'mp_cost': !!int '5'
+  'speed': !!int '0'
+  'id': !!int '59'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '5'
+    'formula': '200 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals lightning attribute damage to a single enemy.'
+  'name': 'Thunder II'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' cast Thunder II!'
+  'scope': !!int '1'
+  'animation_id': !!int '66'
+  'note': ''
+  'mp_cost': !!int '15'
+  'speed': !!int '-5'
+  'id': !!int '60'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '5'
+    'formula': '500 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals thunder attribute damage to all enemies.'
+  'name': 'Spark'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' cast a spell!'
+  'scope': !!int '2'
+  'animation_id': !!int '67'
+  'note': ''
+  'mp_cost': !!int '10'
+  'speed': !!int '-10'
+  'id': !!int '61'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '5'
+    'formula': '200 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals thunder attribute damage to all enemies.'
+  'name': 'Spark II'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' cast Spark II!'
+  'scope': !!int '2'
+  'animation_id': !!int '68'
+  'note': ''
+  'mp_cost': !!int '30'
+  'speed': !!int '-20'
+  'id': !!int '62'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '5'
+    'formula': '500 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals water attribute damage to a single enemy.'
+  'name': 'Water'
+  'occasion': !!int '1'
+  'icon_index': !!int '99'
+  'message1': ' cast a spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '69'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '-5'
+  'id': !!int '63'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '6'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals water attribute damage to all enemies.'
+  'name': 'Wave'
+  'occasion': !!int '1'
+  'icon_index': !!int '99'
+  'message1': ' cast a wave!'
+  'scope': !!int '2'
+  'animation_id': !!int '70'
+  'note': ''
+  'mp_cost': !!int '18'
+  'speed': !!int '-15'
+  'id': !!int '64'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '6'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals Earth attribute damage to a single enemy.'
+  'name': 'Stone'
+  'occasion': !!int '1'
+  'icon_index': !!int '100'
+  'message1': ' cast a spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '71'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '-5'
+  'id': !!int '65'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '7'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals Earth attribute damage to all enemies.'
+  'name': 'Quake'
+  'occasion': !!int '1'
+  'icon_index': !!int '100'
+  'message1': ' cast a quake spell!'
+  'scope': !!int '2'
+  'animation_id': !!int '72'
+  'note': ''
+  'mp_cost': !!int '18'
+  'speed': !!int '-15'
+  'id': !!int '66'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '7'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals wind attribute damage to a single enemy.'
+  'name': 'Wind'
+  'occasion': !!int '1'
+  'icon_index': !!int '101'
+  'message1': ' cast a wind spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '73'
+  'note': ''
+  'mp_cost': !!int '6'
+  'speed': !!int '-5'
+  'id': !!int '67'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '8'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals wind attribute damage to all enemies.'
+  'name': 'Tornado'
+  'occasion': !!int '1'
+  'icon_index': !!int '101'
+  'message1': ' cast a tornado!'
+  'scope': !!int '2'
+  'animation_id': !!int '74'
+  'note': ''
+  'mp_cost': !!int '18'
+  'speed': !!int '-15'
+  'id': !!int '68'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '8'
+    'formula': '300 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals holy attribute damage to a single enemy.'
+  'name': 'Saint'
+  'occasion': !!int '1'
+  'icon_index': !!int '102'
+  'message1': ' chanted a saint!'
+  'scope': !!int '1'
+  'animation_id': !!int '75'
+  'note': ''
+  'mp_cost': !!int '10'
+  'speed': !!int '-10'
+  'id': !!int '69'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '9'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals holy damage to all enemies.'
+  'name': 'Starlight'
+  'occasion': !!int '1'
+  'icon_index': !!int '102'
+  'message1': ' cast Starlight!'
+  'scope': !!int '2'
+  'animation_id': !!int '76'
+  'note': ''
+  'mp_cost': !!int '40'
+  'speed': !!int '-30'
+  'id': !!int '70'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '9'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals dark attribute damage to a single enemy.'
+  'name': 'Shade'
+  'occasion': !!int '1'
+  'icon_index': !!int '103'
+  'message1': ' cast a spell!'
+  'scope': !!int '1'
+  'animation_id': !!int '77'
+  'note': ''
+  'mp_cost': !!int '10'
+  'speed': !!int '-10'
+  'id': !!int '71'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '10'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals dark attribute damage to all enemies.'
+  'name': 'Darkness'
+  'occasion': !!int '1'
+  'icon_index': !!int '103'
+  'message1': ' cast darkness!'
+  'scope': !!int '2'
+  'animation_id': !!int '78'
+  'note': ''
+  'mp_cost': !!int '40'
+  'speed': !!int '-30'
+  'id': !!int '72'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '10'
+    'formula': '400 + a.mat * 2 - b.mdf * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to a single enemy ignoring their defense.'
+  'name': 'Burst'
+  'occasion': !!int '1'
+  'icon_index': !!int '119'
+  'message1': ' cast a burst!'
+  'scope': !!int '1'
+  'animation_id': !!int '79'
+  'note': ''
+  'mp_cost': !!int '15'
+  'speed': !!int '-20'
+  'id': !!int '73'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '0'
+    'formula': '300 + a.mat * 2'
+    'variance': !!int '40'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Deals damage to all enemies ignoring their defense.'
+  'name': 'Nuclear'
+  'occasion': !!int '1'
+  'icon_index': !!int '119'
+  'message1': ' chanted Nuclear!'
+  'scope': !!int '2'
+  'animation_id': !!int '80'
+  'note': ''
+  'mp_cost': !!int '60'
+  'speed': !!int '-40'
+  'id': !!int '74'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '0'
+    'formula': '300 + a.mat * 2'
+    'variance': !!int '40'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '2'
+  'stype_id': !!int '2'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': ''
+  'name': '--------------------'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'message1': ''
+  'scope': !!int '1'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '75'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Grants the user the Fire attribute for 5 turns.'
+  'name': 'Fire Weapon'
+  'occasion': !!int '1'
+  'icon_index': !!int '96'
+  'message1': ' cast a fire weapon!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '25'
+  'speed': !!int '0'
+  'id': !!int '76'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '21'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Grants the user the Ice attribute for 5 turns.'
+  'name': 'Ice Weapon'
+  'occasion': !!int '1'
+  'icon_index': !!int '97'
+  'message1': ' cast an ice weapon!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '25'
+  'speed': !!int '0'
+  'id': !!int '77'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '22'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Grants the user the Thunder attribute for 5 turns.'
+  'name': 'Thunder Weapon'
+  'occasion': !!int '1'
+  'icon_index': !!int '98'
+  'message1': ' cast a Thunder Weapon spell!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '25'
+  'speed': !!int '0'
+  'id': !!int '78'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '23'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': ''
+  'name': '--------------------'
+  'occasion': !!int '0'
+  'icon_index': !!int '0'
+  'message1': ''
+  'scope': !!int '1'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '79'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '0'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs a powerful attack against a single enemy.'
+  'name': 'Strong Strike'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed a powerful attack!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '80'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 5 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs an attack against all enemies.'
+  'name': 'Mowing Down'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' swept away!'
+  'scope': !!int '2'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '81'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '0'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 2 - b.def * 2'
+    'variance': !!int '25'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the attack power of all allies slightly for 5
+
+    turns.'
+  'name': 'Roar of the Berserker'
+  'occasion': !!int '1'
+  'icon_index': !!int '34'
+  'message1': ' used the roar of a berserker!'
+  'scope': !!int '8'
+  'animation_id': !!int '34'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '82'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Axe Technique. Performs a powerful attack against three
+
+    enemies.'
+  'name': 'Berserker Dance'
+  'occasion': !!int '1'
+  'icon_index': !!int '128'
+  'message1': ' unleashed the Berserker Dance!'
+  'scope': !!int '5'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '83'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 5 - b.def * 2'
+    'variance': !!int '30'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '1'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Axe Technique. Performs a powerful attack against all
+
+    enemies.'
+  'name': 'Gigas Rampage'
+  'occasion': !!int '1'
+  'icon_index': !!int '128'
+  'message1': ' unleashed Gigas Rampage!'
+  'scope': !!int '2'
+  'animation_id': !!int '12'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '84'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 12 - b.def * 6'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '1'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs an attack against a single enemy, causing an
+
+    imbalance. The damage depends on the user''s attack power and
+
+    defense power.'
+  'name': 'Tackle'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed a tackle!'
+  'scope': !!int '1'
+  'animation_id': !!int '36'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '85'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '8'
+    'value1': !!float '0.3'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '1'
+    'formula': 'a.atk * 4 + a.def * 2 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Cure all status abnormalities of the user.'
+  'name': 'Chakra'
+  'occasion': !!int '1'
+  'icon_index': !!int '112'
+  'message1': ' used chakra!'
+  'scope': !!int '11'
+  'animation_id': !!int '38'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '86'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '2'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '3'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '4'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '5'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '6'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '22'
+    'data_id': !!int '7'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Perform a counterattack that cancels the enemy''s attack for
+
+    3 turns.'
+  'name': 'Tiger Crouch Stance'
+  'occasion': !!int '1'
+  'icon_index': !!int '11'
+  'message1': ' used a tiger crouch stance!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '87'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '18'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs a powerful attack that ignores defense against all
+
+    enemies. Can act faster than usual.'
+  'name': 'Shadowless Kick'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed a shadowless kick!'
+  'scope': !!int '2'
+  'animation_id': !!int '5'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '100'
+  'id': !!int '88'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '0'
+    'formula': 'a.atk * 5'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Nail Technique. Performs a powerful two-hit attack that
+
+    ignores the enemy''s defense power, targeting a single enemy.'
+  'name': 'Dragon Claw Dance'
+  'occasion': !!int '1'
+  'icon_index': !!int '129'
+  'message1': ' unleashed the Dragon Claw Dance!'
+  'scope': !!int '1'
+  'animation_id': !!int '86'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '89'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 12'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '2'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '2'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Automatically protects low HP allies for one turn.'
+  'name': 'Protect'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' is protecting a friend.'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '2000'
+  'id': !!int '90'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '11'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the user''s likelihood of being targeted for 5
+
+    turns.'
+  'name': 'Taunt'
+  'occasion': !!int '1'
+  'icon_index': !!int '9'
+  'message1': ' attracted the enemy''s attention!'
+  'scope': !!int '11'
+  'animation_id': !!int '34'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '91'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '12'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Protects the user from physical attacks almost completely
+
+    for 3 turns.'
+  'name': 'Iron Wall Defense'
+  'occasion': !!int '1'
+  'icon_index': !!int '113'
+  'message1': ' used an impenetrable defense!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '92'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '17'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the defense power of all allies significantly for 5
+
+    turns.'
+  'name': 'Ritter Shield'
+  'occasion': !!int '1'
+  'icon_index': !!int '43'
+  'message1': ' used a shield!'
+  'scope': !!int '8'
+  'animation_id': !!int '33'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '93'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Spear technique. Performs a powerful double attack against
+
+    three enemies.'
+  'name': 'Zex Schturm'
+  'occasion': !!int '1'
+  'icon_index': !!int '130'
+  'message1': ' unleashed Zex Schturm!'
+  'scope': !!int '5'
+  'animation_id': !!int '90'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '1000'
+  'id': !!int '94'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 5 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '3'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '2'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Sword technique. Performs a powerful attack on a single
+
+    enemy and silences them. The damage depends on the user''s
+
+    attack power and magic power.'
+  'name': 'Aura Blade'
+  'occasion': !!int '1'
+  'icon_index': !!int '131'
+  'message1': ' unleashed the Aura Blade!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '95'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '4'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 + a.mat * 3 - b.def - b.mdf'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '4'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Remove the enemy''s single-target enhancement magic.'
+  'name': 'Dispel'
+  'occasion': !!int '1'
+  'icon_index': !!int '114'
+  'message1': ' used Dispel!'
+  'scope': !!int '1'
+  'animation_id': !!int '46'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '96'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '2'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '3'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '4'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '5'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '6'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '33'
+    'data_id': !!int '7'
+    'value1': !!float '0.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the user''s magic defense significantly for 3
+
+    turns.'
+  'name': 'Magic Barrier'
+  'occasion': !!int '1'
+  'icon_index': !!int '45'
+  'message1': ' used a magic barrier!'
+  'scope': !!int '11'
+  'animation_id': !!int '44'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '97'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '5'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '5'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Grants the user the attributes of fire, ice, and lightning
+
+    for 5 turns.'
+  'name': 'Reinforcer'
+  'occasion': !!int '1'
+  'icon_index': !!int '113'
+  'message1': ' used a Reinforcer!'
+  'scope': !!int '11'
+  'animation_id': !!int '44'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '98'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '21'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '22'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '23'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Sword technique. Performs a powerful holy attribute attack
+
+    against all enemies. The damage depends on the user''s attack
+
+    power and magic power.'
+  'name': 'Radiant Blade'
+  'occasion': !!int '1'
+  'icon_index': !!int '131'
+  'message1': ' unleashed the Radiant Blade!'
+  'scope': !!int '2'
+  'animation_id': !!int '87'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '1000'
+  'id': !!int '99'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '9'
+    'formula': 'a.atk * 5 + a.mat * 5 - b.def - b.mdf'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '4'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs an attack that ignores the enemy''s defense power.'
+  'name': 'Armor Piercing'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed a sword strike!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '100'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the user''s TP a little.'
+  'name': 'Mind Purge'
+  'occasion': !!int '1'
+  'icon_index': !!int '112'
+  'message1': ' used the technique of clearing one''s mind!'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '101'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '13'
+    'data_id': !!int '0'
+    'value1': !!float '30.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the user''s attack and defense power slightly for 5
+
+    turns.'
+  'name': 'Eight Aspects'
+  'occasion': !!int '1'
+  'icon_index': !!int '113'
+  'message1': ' used Hachisou!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '102'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '2'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Sword technique. Performs two attacks against all enemies.'
+  'name': 'Swallow Return'
+  'occasion': !!int '1'
+  'icon_index': !!int '132'
+  'message1': ' returned the ball with a smash!'
+  'scope': !!int '2'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '103'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 3 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '5'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '2'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Sword technique. Performs 4 attacks against all enemies.'
+  'name': 'Cherry Blossom Dream Phantom Blade'
+  'occasion': !!int '1'
+  'icon_index': !!int '132'
+  'message1': ' unleashed the Sakura Hanayume Blade!'
+  'scope': !!int '2'
+  'animation_id': !!int '88'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '104'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '5'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '4'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs a guaranteed hit attack on a single enemy and
+
+    slightly lowers their attack power.'
+  'name': 'Weapon Break'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed Weapon Break!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '105'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '2'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs a guaranteed hit attack on a single enemy and
+
+    slightly lowers their defense.'
+  'name': 'Armor Break'
+  'occasion': !!int '1'
+  'icon_index': !!int '116'
+  'message1': ' unleashed Armor Break!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '106'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '3'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the user''s agility significantly for 5 turns.'
+  'name': 'Absolute Shadow'
+  'occasion': !!int '1'
+  'icon_index': !!int '46'
+  'message1': ' used Zetsuei!'
+  'scope': !!int '11'
+  'animation_id': !!int '31'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '107'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '6'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '6'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Archery skill. Performs a powerful attack against three
+
+    enemies. The damage depends on the user''s attack power and
+
+    agility.'
+  'name': 'Triple Shot'
+  'occasion': !!int '1'
+  'icon_index': !!int '133'
+  'message1': ' unleashed a triple shot!'
+  'scope': !!int '5'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '108'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 4 + a.agi * 2 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '6'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Archery skill. Performs 3 attacks against all enemies. The
+
+    damage depends on the user''s attack power and agility.'
+  'name': 'Thousand Arrow'
+  'occasion': !!int '1'
+  'icon_index': !!int '133'
+  'message1': ' released a Thousand Arrows!'
+  'scope': !!int '2'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '109'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 3 + a.agi * 2 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '6'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '3'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Decreases the user''s likelihood of being targeted for 5
+
+    turns.'
+  'name': 'Hide'
+  'occasion': !!int '1'
+  'icon_index': !!int '12'
+  'message1': ' disappeared!'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '110'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '13'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Inflicts darkness status on all enemies.'
+  'name': 'Flash Ball'
+  'occasion': !!int '1'
+  'icon_index': !!int '3'
+  'message1': ' used a flash ball!'
+  'scope': !!int '2'
+  'animation_id': !!int '33'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '111'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '3'
+    'value1': !!float '0.5'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the user''s luck significantly for 8 turns.'
+  'name': 'Thief''s Misfortune'
+  'occasion': !!int '1'
+  'icon_index': !!int '47'
+  'message1': ' used the thief''s bad luck!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '112'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '7'
+    'value1': !!float '8.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '7'
+    'value1': !!float '8.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Dagger Technique. Performs a powerful double attack against
+
+    a single enemy. The damage depends on the user''s attack
+
+    power and luck.'
+  'name': 'Assassin Edge'
+  'occasion': !!int '1'
+  'icon_index': !!int '134'
+  'message1': ' unleashed an Assassin Edge!'
+  'scope': !!int '1'
+  'animation_id': !!int '-1'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '113'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 3 + a.luk * 4 - b.def * 2'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '7'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '2'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Dagger Technique. Performs a powerful attack against four
+
+    enemies. The damage depends on the user''s attack power and
+
+    luck.'
+  'name': 'Valiant Edge'
+  'occasion': !!int '1'
+  'icon_index': !!int '134'
+  'message1': ' unleashed a Valiant Edge!'
+  'scope': !!int '6'
+  'animation_id': !!int '89'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '114'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '-1'
+    'formula': 'a.atk * 2 + a.luk * 4 - b.def * 2'
+    'variance': !!int '50'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '1'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '7'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the defense of all allies slightly for 3 turns.'
+  'name': 'Blessing of the Holy Spirit'
+  'occasion': !!int '1'
+  'icon_index': !!int '35'
+  'message1': ' used the blessing of the Holy Spirit!'
+  'scope': !!int '8'
+  'animation_id': !!int '44'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '115'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '3.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'For 4 turns, all allies will be in a state of automatic HP
+
+    recovery.'
+  'name': 'Fairy''s Breath'
+  'occasion': !!int '1'
+  'icon_index': !!int '10'
+  'message1': ' used the breath of a fairy!'
+  'scope': !!int '8'
+  'animation_id': !!int '42'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '116'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '14'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Performs a magic-based holy attribute attack against all
+
+    enemies.'
+  'name': 'Divine Punishment'
+  'occasion': !!int '1'
+  'icon_index': !!int '102'
+  'message1': ' unleashed divine punishment!'
+  'scope': !!int '2'
+  'animation_id': !!int '76'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '117'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '1'
+    'element_id': !!int '9'
+    'formula': 'a.mat * 5 - b.mdf'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increase the defense and magic defense of all allies
+
+    significantly for 7 turns.'
+  'name': 'Goddess''s Blessing'
+  'occasion': !!int '1'
+  'icon_index': !!int '113'
+  'message1': ' used the goddess''s blessing!'
+  'scope': !!int '8'
+  'animation_id': !!int '44'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '118'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '7.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '3'
+    'value1': !!float '7.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '5'
+    'value1': !!float '7.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '5'
+    'value1': !!float '7.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Reflects enemy magic attacks for one turn.'
+  'name': 'Magic Reflection'
+  'occasion': !!int '1'
+  'icon_index': !!int '15'
+  'message1': ' is prepared for the enemy''s magic attack.'
+  'scope': !!int '11'
+  'animation_id': !!int '0'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '2000'
+  'id': !!int '119'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '20'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Increases the user''s magical power significantly for 5
+
+    turns.'
+  'name': 'Spell Enhance'
+  'occasion': !!int '1'
+  'icon_index': !!int '44'
+  'message1': ' used Spell Enhancement!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '120'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '4'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '31'
+    'data_id': !!int '4'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Puts all enemies to sleep and significantly lowers their
+
+    magic defense.'
+  'name': 'Nightmare'
+  'occasion': !!int '1'
+  'icon_index': !!int '6'
+  'message1': ' unleashed a nightmare!'
+  'scope': !!int '2'
+  'animation_id': !!int '56'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '121'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '6'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '5'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '32'
+    'data_id': !!int '5'
+    'value1': !!float '5.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Restore the user''s MP to 50% of its maximum value.'
+  'name': 'Torrent of Magic Power'
+  'occasion': !!int '1'
+  'icon_index': !!int '14'
+  'message1': ' used a surge of magical power!'
+  'scope': !!int '11'
+  'animation_id': !!int '38'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '122'
+  'features': []
+  'effects': []
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '4'
+    'element_id': !!int '0'
+    'formula': 'b.mmp * 0.5'
+    'variance': !!int '0'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'For 4 turns, the user will be in an automatic MP recovery
+
+    state.'
+  'name': 'Aura of Magic Veins'
+  'occasion': !!int '1'
+  'icon_index': !!int '10'
+  'message1': ' used the aura of magic veins!'
+  'scope': !!int '11'
+  'animation_id': !!int '38'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '123'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '15'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '10'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Nullifies magic attacks against the user for 3 turns.'
+  'name': 'Absolute Magic Defense'
+  'occasion': !!int '1'
+  'icon_index': !!int '13'
+  'message1': ' used absolute magic defense!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '124'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '19'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '25'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Prevents status abnormalities for all allies for 5 turns.'
+  'name': 'Radiance of Mana'
+  'occasion': !!int '1'
+  'icon_index': !!int '113'
+  'message1': ' used Mana''s radiance!'
+  'scope': !!int '8'
+  'animation_id': !!int '44'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '125'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '24'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '50'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
+- !ruby/object:RPG::Skill
+  'message2': ''
+  'description': 'Reduce the user''s MP consumption significantly for 5 turns.'
+  'name': 'Secret Art of Magic'
+  'occasion': !!int '1'
+  'icon_index': !!int '14'
+  'message1': ' used a secret ritual of magic!'
+  'scope': !!int '11'
+  'animation_id': !!int '43'
+  'note': ''
+  'mp_cost': !!int '0'
+  'speed': !!int '0'
+  'id': !!int '126'
+  'features': []
+  'effects':
+  - !ruby/object:RPG::UsableItem::Effect
+    'code': !!int '21'
+    'data_id': !!int '25'
+    'value1': !!float '1.0'
+    'value2': !!float '0.0'
+  'damage': !ruby/object:RPG::UsableItem::Damage
+    'type': !!int '0'
+    'element_id': !!int '0'
+    'formula': '0'
+    'variance': !!int '20'
+    'critical': !!bool 'false'
+  'success_rate': !!int '100'
+  'hit_type': !!int '0'
+  'stype_id': !!int '1'
+  'tp_cost': !!int '100'
+  'required_wtype_id1': !!int '0'
+  'required_wtype_id2': !!int '0'
+  'repeats': !!int '1'
+  'tp_gain': !!int '0'
