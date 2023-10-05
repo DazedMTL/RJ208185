@@ -32,30 +32,30 @@ module CM
   #--------------------------------------------------------------------------
   COMMAND_ITEMS = {}
   COMMAND_ITEMS[:item] = {
-    :name     => "アイテム",
+    :name     => "Item",
     :command  => Scene_Item,
-    :help     => 'アイテムを使用します。'
+    :help     => 'Use an item.'
   }
   COMMAND_ITEMS[:save] = {
-    :name     => "セーブ",
+    :name     => "Save",
     :command  => Scene_Save,
     :enable   => "!$game_system.save_disabled",
-    :help     => 'ゲームをセーブします。'
+    :help     => 'Save the game.'
   }
   COMMAND_ITEMS[:load] = {
-    :name     => "ロード",
+    :name     => "Load",
     :command  => Scene_Load,
     :enable   => "DataManager.save_file_exists?",
-    :help     => 'セーブデータをロードします。'
+    :help     => 'Load the game.'
   }
   COMMAND_ITEMS[:file] = {
-  :name => "ファイル",
+  :name => "File",
   :sub  => :sub_file,
   }
   COMMAND_ITEMS[:game_end] = {
-    :name     => "ゲーム終了",
+    :name     => "End Game",
     :command  => Scene_End,
-    :help     => 'ゲームを終了します。'
+    :help     => 'Exit Game'
   }
   #--------------------------------------------------------------------------
   # ◇ 表示項目の設定
