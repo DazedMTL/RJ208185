@@ -1,5 +1,3 @@
-Shoutout to Milky00000 who has done a good amount of manual edits to the project!
-
 # Apply Patch
 1. Click Code
 2. Click Download ZIP
